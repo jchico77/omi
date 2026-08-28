@@ -186,6 +186,13 @@ def extraer_items(sumario: dict, fecha: date, avisos: list) -> list:
     return registros
 
 
+def extraer_nodo_sumario(cuerpo: dict):
+    sumario = (cuerpo.get("data") or {}).get("sumario")
+    if not isinstance(sumario, dict):
+        raise ValueError(f"Respuesta sin nodo data.sumario (claves: {sorted(cuerpo)})")
+    return sumario
+
+
 def descargar_sumario(fecha: date):
     """Devuelve (sumario|None, hubo_boe). 404 => (None, False), día sin BOE."""
     url = API_SUMARIO.format(fecha=fecha.strftime("%Y%m%d"))
@@ -193,11 +200,26 @@ def descargar_sumario(fecha: date):
     if respuesta.status_code == 404:
         return None, False
     respuesta.raise_for_status()
-    cuerpo = respuesta.json()
-    sumario = (cuerpo.get("data") or {}).get("sumario")
-    if not isinstance(sumario, dict):
-        raise ValueError(f"Respuesta sin nodo data.sumario (claves: {sorted(cuerpo)})")
-    return sumario, True
+    return extraer_nodo_sumario(respuesta.json()), True
+
+
+def leer_sumario_local(ruta: Path):
+    """Lee un sumario descargado a mano (mismo JSON que devuelve la API).
+
+    Para entornos sin salida a boe.es: descarga en otra máquina con
+        curl -H "Accept: application/json" \\
+             https://www.boe.es/datosabiertos/api/boe/sumario/AAAAMMDD -o AAAAMMDD.json
+    y pásalo con --fichero. Un fichero vacío o con {"status":...,"code":"404"}
+    se trata como día sin BOE.
+    """
+    contenido = ruta.read_text(encoding="utf-8").strip()
+    if not contenido:
+        return None, False
+    cuerpo = json.loads(contenido)
+    estado = cuerpo.get("status")
+    if isinstance(estado, dict) and str(estado.get("code")) == "404":
+        return None, False
+    return extraer_nodo_sumario(cuerpo), True
 
 
 def parsear_fecha(texto: str) -> date:
@@ -209,9 +231,12 @@ def parsear_fecha(texto: str) -> date:
     raise argparse.ArgumentTypeError(f"Fecha no válida: {texto!r} (usa AAAA-MM-DD o AAAAMMDD)")
 
 
-def ingerir(fecha: date, dir_salida: Path) -> dict:
+def ingerir(fecha: date, dir_salida: Path, fichero: Path = None) -> dict:
     avisos = []
-    sumario, hubo_boe = descargar_sumario(fecha)
+    if fichero is not None:
+        sumario, hubo_boe = leer_sumario_local(fichero)
+    else:
+        sumario, hubo_boe = descargar_sumario(fecha)
     registros = extraer_items(sumario, fecha, avisos) if hubo_boe else []
 
     por_seccion = {}
@@ -243,15 +268,21 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Ingesta local del sumario diario del BOE (Fase 0).")
     parser.add_argument("fecha", type=parsear_fecha, help="Fecha del BOE (AAAA-MM-DD o AAAAMMDD)")
     parser.add_argument("--out", type=Path, default=Path(__file__).parent / "data", help="Directorio de salida")
+    parser.add_argument(
+        "--fichero",
+        type=Path,
+        default=None,
+        help="Sumario JSON descargado a mano (misma respuesta de la API); si se indica, no se llama a la red",
+    )
     args = parser.parse_args()
 
     try:
-        resultado = ingerir(args.fecha, args.out)
+        resultado = ingerir(args.fecha, args.out, fichero=args.fichero)
     except requests.RequestException as e:
         print(f"[ERROR] Fallo de red o de la API para {args.fecha.isoformat()}: {e}", file=sys.stderr)
         return 1
-    except ValueError as e:
-        print(f"[ERROR] Respuesta inesperada de la API para {args.fecha.isoformat()}: {e}", file=sys.stderr)
+    except (ValueError, OSError) as e:
+        print(f"[ERROR] Respuesta o fichero inválido para {args.fecha.isoformat()}: {e}", file=sys.stderr)
         return 1
 
     if not resultado["boe_publicado"]:
