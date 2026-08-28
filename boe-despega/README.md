@@ -51,3 +51,21 @@ bloquea el egreso a `boe.es` y `www.boe.es` por política de red, así que la
 validación no pudo correrse ahí. Ejecutar `python validate_fase0.py` desde una
 máquina con salida a internet (o permitir esos dominios en la política de red
 del entorno) y revisar el informe antes de dar por buena la v1.
+
+## Modo offline (entornos sin salida a boe.es)
+
+Los sumarios se pueden descargar en otra máquina y procesar sin red:
+
+```bash
+# En una máquina con internet (una línea por fecha de validación):
+for d in 20260724 20260826 20260823 20241224 20250417 20240816 20250102 20251011 20240605 20260213; do
+  curl -sS -H "Accept: application/json" \
+    "https://www.boe.es/datosabiertos/api/boe/sumario/$d" -o "$d.json"
+done
+
+# En el entorno sin red, tras copiar los ficheros a data/raw/:
+python validate_fase0.py                       # detecta data/raw/ automáticamente
+python ingest.py 2026-07-24 --fichero data/raw/20260724.json   # fecha suelta
+```
+
+Un fichero vacío o con `{"status":{"code":"404"}}` se trata como día sin BOE.
