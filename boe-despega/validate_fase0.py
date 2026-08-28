@@ -34,13 +34,18 @@ FECHAS = [
 
 DIR_DATOS = Path(__file__).parent / "data"
 
+# Si existe data/raw/AAAAMMDD.json (sumario descargado a mano con curl, ver
+# --fichero en ingest.py), se usa en vez de llamar a la red.
+DIR_CRUDOS = DIR_DATOS / "raw"
+
 
 def main() -> int:
     resultados = []
     fallos = []
     for fecha, motivo in FECHAS:
+        crudo = DIR_CRUDOS / f"{fecha.strftime('%Y%m%d')}.json"
         try:
-            resultado = ingerir(fecha, DIR_DATOS)
+            resultado = ingerir(fecha, DIR_DATOS, fichero=crudo if crudo.exists() else None)
         except (requests.RequestException, ValueError) as e:
             print(f"[ERROR] {fecha.isoformat()}: {e}", file=sys.stderr)
             fallos.append((fecha, motivo, str(e)))
