@@ -1,0 +1,366 @@
+<title>BOE Despega</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#F6F4ED; --ink:#201F1A; --ink-soft:#5C594E; --ink-faint:#8B877A;
+  --line:#DBD7C9; --line-soft:#E8E5DA;
+  --marker:#FFE23D; --marker-soft:#FFF3B8;
+  --heat-1:#EBD9B4; --heat-2:#D9A254; --heat-3:#C06520; --heat-4:#A03D10;
+  --card:#FCFBF7;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#181712; --ink:#EAE6D9; --ink-soft:#ABA695; --ink-faint:#7C7869;
+    --line:#3A3729; --line-soft:#2A2820;
+    --marker:#F5D22C; --marker-soft:#4A4110;
+    --heat-1:#4A3B20; --heat-2:#8A5F26; --heat-3:#C97A31; --heat-4:#E8945B;
+    --card:#201F18;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#181712; --ink:#EAE6D9; --ink-soft:#ABA695; --ink-faint:#7C7869;
+  --line:#3A3729; --line-soft:#2A2820;
+  --marker:#F5D22C; --marker-soft:#4A4110;
+  --heat-1:#4A3B20; --heat-2:#8A5F26; --heat-3:#C97A31; --heat-4:#E8945B;
+  --card:#201F18;
+}
+*{box-sizing:border-box}
+body{
+  background:var(--paper); color:var(--ink);
+  font:16px/1.6 "IBM Plex Sans",system-ui,sans-serif;
+  margin:0; padding:0 20px 80px;
+}
+main{max-width:860px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--ink-faint);text-underline-offset:3px}
+a:hover{text-decoration-color:var(--ink);background:var(--marker-soft)}
+h1,h2,h3{font-family:"Libre Caslon Text",Georgia,serif;text-wrap:balance;margin:0}
+mark{background:var(--marker);color:#201F1A;padding:0 3px;border-radius:2px}
+.mono{font-family:"IBM Plex Mono",monospace}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-soft);
+}
+/* Masthead */
+header{border-top:6px double var(--ink);margin-top:28px;padding-top:18px}
+.mast{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 18px;justify-content:space-between}
+h1{font-size:clamp(34px,6vw,52px);font-weight:700;letter-spacing:-.01em}
+h1 .despega{font-style:italic;font-weight:400}
+.mast-meta{text-align:right;font-size:13px;color:var(--ink-soft);line-height:1.5}
+.lede{
+  font-family:"Libre Caslon Text",Georgia,serif;font-size:19px;font-style:italic;
+  color:var(--ink-soft);max-width:56ch;margin:14px 0 0;
+  border-bottom:1px solid var(--ink);padding-bottom:22px;
+}
+section{margin-top:52px}
+h2{font-size:26px;padding-bottom:8px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.kicker{font-size:14px;color:var(--ink-soft);margin:6px 0 22px;max-width:66ch}
+/* Pipeline strip */
+.pipe{display:flex;flex-wrap:wrap;gap:8px;align-items:stretch;margin-top:18px}
+.pipe-step{
+  flex:1 1 150px;border:1px solid var(--line);background:var(--card);
+  padding:12px 14px;font-size:13.5px;line-height:1.5;color:var(--ink-soft);
+  border-radius:3px;position:relative;
+}
+.pipe-step b{display:block;color:var(--ink);font-size:13px;margin-bottom:3px}
+.pipe-step .n{position:absolute;top:10px;right:12px;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-faint)}
+/* Stat row */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-top:20px}
+.stat{border:1px solid var(--line);background:var(--card);padding:14px 16px 12px;border-radius:3px}
+.stat .v{font-family:"Libre Caslon Text",Georgia,serif;font-size:34px;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat .l{font-size:12.5px;color:var(--ink-soft);margin-top:2px}
+.stat.hot{border-color:var(--heat-3)}
+.stat.hot .v{color:var(--heat-4)}
+/* Entradas del sumario */
+.entry{border-bottom:1px solid var(--line-soft);padding:20px 0}
+.entry:last-child{border-bottom:none}
+.entry-top{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.chip{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  border:1.5px solid var(--ink);padding:2px 9px;border-radius:99px;font-weight:500;
+}
+.chip.tag{background:var(--marker);border-color:var(--marker);color:#201F1A}
+.entry-id{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink-soft)}
+.entry-dep{font-size:12.5px;color:var(--ink-faint)}
+.entry h3{font-size:17.5px;font-weight:400;line-height:1.55;max-width:72ch}
+.entry-foot{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;font-size:13px;color:var(--ink-soft);align-items:center}
+/* Medidor de entierro */
+.meter{display:flex;align-items:center;gap:10px;min-width:180px}
+.meter .bar{flex:1;height:8px;background:var(--line-soft);border-radius:99px;overflow:hidden}
+.meter .fill{height:100%;border-radius:99px}
+.meter .num{font-family:"IBM Plex Mono",monospace;font-size:13px;font-variant-numeric:tabular-nums}
+/* Caso estrella */
+.star{
+  border:1.5px solid var(--heat-3);background:var(--card);border-radius:4px;
+  padding:22px 24px;margin-top:20px;
+}
+.star .sum{display:flex;flex-wrap:wrap;gap:4px 10px;margin:14px 0 4px;font-family:"IBM Plex Mono",monospace;font-size:13px}
+.star .sum span{border:1px solid var(--line);padding:3px 10px;border-radius:3px;background:var(--paper)}
+.star .sum .tot{background:var(--heat-4);border-color:var(--heat-4);color:var(--paper);font-weight:500}
+/* Barras de sección */
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:8px 12px;align-items:center;margin-top:18px;font-size:13.5px}
+.bars .lab{font-family:"IBM Plex Mono",monospace;font-size:12.5px}
+.bars .track{height:16px;background:none}
+.bars .bar-fill{height:16px;background:var(--ink-soft);border-radius:0 3px 3px 0;min-width:2px}
+.bars .n{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;color:var(--ink-soft)}
+.bars .hint{grid-column:1/-1;font-size:12.5px;color:var(--ink-faint)}
+/* Miss list */
+.miss{display:grid;gap:14px;margin-top:18px}
+.miss-item{border-left:3px solid var(--line);padding:2px 0 2px 16px}
+.miss-item b{font-weight:600}
+.miss-item p{margin:4px 0 0;font-size:14px;color:var(--ink-soft);max-width:70ch}
+/* Tabla completa */
+details{margin-top:16px}
+summary{cursor:pointer;font-weight:600;font-size:14.5px;padding:10px 0}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:3px}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:640px}
+th{
+  text-align:left;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-soft);font-weight:500;
+  padding:10px 12px;border-bottom:1px solid var(--line);background:var(--card);
+}
+td{padding:9px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+tr:last-child td{border-bottom:none}
+td.mono{white-space:nowrap;font-size:12.5px}
+td.num{font-variant-numeric:tabular-nums;font-family:"IBM Plex Mono",monospace;text-align:right}
+/* Notas */
+.notes{font-size:13.5px;color:var(--ink-soft);border-top:6px double var(--ink);margin-top:64px;padding-top:18px}
+.notes p{max-width:75ch;margin:10px 0}
+@media (prefers-reduced-motion: no-preference){
+  .meter .fill{transition:width .6s ease}
+}
+</style>
+
+<main>
+<header>
+  <div class="mast">
+    <h1>BOE <span class="despega">Despega</span></h1>
+    <div class="mast-meta mono">
+      Demo · Fase 0<br>
+      Muestra real 2020–2022 · 36 disposiciones
+    </div>
+  </div>
+  <p class="lede">Lee el BOE cada mañana, detecta lo jugoso y lo publica con enlace al documento original. Sin opinión: la ironía la pone el dato solo.</p>
+</header>
+
+<section>
+  <div class="eyebrow">De dónde salen estos datos</div>
+  <h2>PDFs reales del BOE, leídos a contracorriente</h2>
+  <p class="kicker">La red de este entorno bloquea <span class="mono">boe.es</span>, así que la demo se abasteció de un espejo público: un volcado de 1,24&nbsp;GB con el texto extraído de los PDF oficiales del BOE (2020–2022). Se leyó por ventanas remotas, se transcribieron 36 disposiciones al azar y se les aplicó <em>el clasificador real</em> del proyecto (<span class="mono">ingest.py</span>). Ningún dato inventado; los títulos truncados se marcan con «…».</p>
+  <div class="pipe">
+    <div class="pipe-step"><span class="n">1</span><b>Fuente</b>Texto de los PDF oficiales (espejo público en Hugging&nbsp;Face)</div>
+    <div class="pipe-step"><span class="n">2</span><b>Extracción</b>Ventanas de 8–25&nbsp;KB en offsets repartidos del volcado</div>
+    <div class="pipe-step"><span class="n">3</span><b>Clasificador v1</b>Reglas sobre el título, sin IA: 9 etiquetas</div>
+    <div class="pipe-step"><span class="n">4</span><b>Señales propias</b>Índice de entierro 0–100 por fecha de publicación</div>
+    <div class="pipe-step"><span class="n">5</span><b>Salida</b>En producción: canal de Telegram con enlace al original</div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">El resumen que enviaría el bot</div>
+  <h2>La muestra, en cifras</h2>
+  <div class="stats">
+    <div class="stat"><div class="v">36</div><div class="l">disposiciones reales</div></div>
+    <div class="stat"><div class="v">5</div><div class="l">etiquetadas por las reglas</div></div>
+    <div class="stat"><div class="v">2</div><div class="l">nombramientos</div></div>
+    <div class="stat"><div class="v">2</div><div class="l">libres designaciones</div></div>
+    <div class="stat"><div class="v">1</div><div class="l">convenio</div></div>
+    <div class="stat hot"><div class="v">85</div><div class="l">índice de entierro máximo</div></div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Lo que el clasificador subrayó</div>
+  <h2>Cinco hallazgos, con su palabra clave marcada</h2>
+  <p class="kicker">El subrayado amarillo es literalmente lo que hace el producto: la regla que disparó cada etiqueta, sobre el título oficial. Cada entrada enlaza al documento en boe.es.</p>
+
+  <article class="entry">
+    <div class="entry-top">
+      <span class="chip tag">nombramiento</span>
+      <span class="entry-id">BOE-A-2020-12504 · II-A · lunes 19-10-2020</span>
+    </div>
+    <div class="entry-dep">Ministerio de Educación y Formación Profesional</div>
+    <h3>Orden EFP/972/2020, de 8 de octubre, por la que, a propuesta del Departamento de Educación de la Comunidad Autónoma de Cataluña, <mark>se nombran</mark> funcionarios de carrera de los Cuerpos de Profesores de Enseñanza Secundaria, Profesores de Escuelas Oficiales de Idiomas, Profesores de Artes Plásticas y Diseño y Maestros…</h3>
+    <div class="entry-foot"><a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2020-12504">Ver en boe.es</a></div>
+  </article>
+
+  <article class="entry">
+    <div class="entry-top">
+      <span class="chip tag">nombramiento</span>
+      <span class="entry-id">BOE-A-2021-5214 · II-A · viernes 02-04-2021</span>
+    </div>
+    <div class="entry-dep">Ministerio de Universidades</div>
+    <h3>Resolución de 29 de marzo de 2021, de la Agencia Nacional de Evaluación de la Calidad y Acreditación, por la que se corrigen errores en la de 11 de febrero de 2021, por la que <mark>se nombran</mark> miembros de Comités Asesores de la Comisión Nacional Evaluadora de la Actividad Investigadora.</h3>
+    <div class="entry-foot">
+      <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2021-5214">Ver en boe.es</a>
+      <div class="meter"><span class="num">30</span><div class="bar"><div class="fill" style="width:30%;background:var(--heat-2)"></div></div><span style="font-size:12px;color:var(--ink-faint)">publicado en viernes</span></div>
+    </div>
+  </article>
+
+  <article class="entry">
+    <div class="entry-top">
+      <span class="chip tag">libre_designacion</span>
+      <span class="entry-id">BOE-A-2020-8650 · II-A · martes 28-07-2020</span>
+    </div>
+    <div class="entry-dep">Ministerio para la Transición Ecológica y el Reto Demográfico</div>
+    <h3>Resolución de 20 de julio de 2020, de la Presidencia de la Agencia Estatal de Meteorología, por la que se resuelve la convocatoria de <mark>libre designación</mark>, efectuada por Resolución de 21 de mayo de 2020.</h3>
+    <div class="entry-foot"><a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2020-8650">Ver en boe.es</a></div>
+  </article>
+
+  <article class="entry">
+    <div class="entry-top">
+      <span class="chip tag">libre_designacion</span>
+      <span class="entry-id">BOE-A-2020-3182 · II-B · jueves 05-03-2020</span>
+    </div>
+    <div class="entry-dep">Ministerio de Política Territorial y Función Pública</div>
+    <h3>Resolución de 3 de marzo de 2020, de la Subsecretaría, por la que se corrigen errores en la de 24 de febrero de 2020, por la que se convoca la provisión de puestos de trabajo por el sistema de <mark>libre designación</mark>.</h3>
+    <div class="entry-foot"><a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2020-3182">Ver en boe.es</a></div>
+  </article>
+
+  <article class="entry">
+    <div class="entry-top">
+      <span class="chip tag">convenio</span>
+      <span class="entry-id">BOE-A-2022-3040 · III · viernes 25-02-2022</span>
+    </div>
+    <div class="entry-dep">Ministerio de Cultura y Deporte</div>
+    <h3>Resolución de 21 de febrero de 2022, del Instituto Nacional de las Artes Escénicas y de la Música, por la que se publica el <mark>Convenio</mark> con La Filarmónica Sociedad de Conciertos, SL, para la organización en coproducción de un concierto comprendido en el ciclo «Liceo de Cámara XXI» del Centro Nacional de Difusión Musical, programación 2021-2022.</h3>
+    <div class="entry-foot">
+      <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2022-3040">Ver en boe.es</a>
+      <span style="font-size:12.5px;color:var(--ink-faint)">prioridad baja: no se publica en Telegram por defecto</span>
+    </div>
+  </article>
+</section>
+
+<section>
+  <div class="eyebrow">La señal diferencial</div>
+  <h2>Índice de entierro: publicar donde nadie mira</h2>
+  <p class="kicker">Cada disposición puntúa 0–100 según cuándo se publicó: viernes (+30), víspera de festivo nacional (+30), agosto o del 24 de diciembre al 6 de enero (+25). La cuarta señal —día con volumen anómalo— necesita el histórico de la Fase 3 y no se computa aún.</p>
+
+  <div class="star">
+    <div class="entry-top">
+      <span class="chip" style="border-color:var(--heat-4);color:var(--heat-4)">entierro 85/100</span>
+      <span class="entry-id">BOE-A-2021-21967 · III · viernes 31-12-2021</span>
+    </div>
+    <div class="entry-dep">Ministerio de Ciencia e Innovación</div>
+    <h3 style="font-size:17.5px;font-weight:400;line-height:1.55;margin-top:8px">Orden CIN/1502/2021, de 27 de diciembre, por la que se aprueban las bases reguladoras de la concesión de ayudas públicas a proyectos de colaboración público-privada… y por la que se aprueba la convocatoria de tramitación anticipada correspondiente al año 2021.</h3>
+    <div class="sum">
+      <span>viernes +30</span>
+      <span>víspera de festivo +30</span>
+      <span>ventana navideña +25</span>
+      <span class="tot">= 85</span>
+    </div>
+    <p style="font-size:13.5px;color:var(--ink-soft);margin:10px 0 0;max-width:70ch">Unas bases de ayudas y su convocatoria, publicadas la mañana de Nochevieja —viernes, víspera de festivo y plena ventana navideña—. Es exactamente el patrón que este índice existe para señalar. <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2021-21967">Ver en boe.es</a></p>
+  </div>
+
+  <article class="entry" style="margin-top:8px">
+    <div class="entry-top">
+      <span class="chip" style="border-color:var(--heat-3);color:var(--heat-3)">entierro 55/100</span>
+      <span class="entry-id">BOE-B-2021-35541 · V-B · sábado 14-08-2021</span>
+    </div>
+    <div class="entry-dep">Ministerio de Hacienda · Agencia Estatal de Administración Tributaria</div>
+    <h3>Anuncio de subasta administrativa de la Agencia Estatal de Administración Tributaria, con número de referencia S2021R5086002006.</h3>
+    <div class="entry-foot">
+      <div class="meter" style="max-width:280px"><span class="num">55</span><div class="bar"><div class="fill" style="width:55%;background:var(--heat-3)"></div></div><span style="font-size:12px;color:var(--ink-faint)">agosto + víspera del 15-A</span></div>
+      <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-B-2021-35541">Ver en boe.es</a>
+    </div>
+  </article>
+</section>
+
+<section>
+  <div class="eyebrow">Igual de importante</div>
+  <h2>Lo que no etiquetó, y por qué está bien</h2>
+  <div class="miss">
+    <div class="miss-item">
+      <b>Ayudas sí, pero en concurrencia competitiva.</b>
+      <p>La Orden CIN/1502/2021 habla de «concesión de ayudas», pero no de <em>concesión directa</em>: la regla <span class="mono">subvencion_directa</span> exige ambas cosas y no saltó. Cero falsos positivos en la muestra.</p>
+    </div>
+    <div class="miss-item">
+      <b>Un nombramiento que el título esconde.</b>
+      <p>La Resolución de la CNMC (BOE-A-2021-11969) resuelve el nombramiento de una directora, pero su título solo dice «se resuelve el proceso selectivo». Las reglas v1 miran solo el título: este caso queda para la validación de precisión y, si abunda, para afinar la v2.</p>
+    </div>
+    <div class="miss-item">
+      <b>El ruido de fondo, ignorado.</b>
+      <p>Cambios oficiales del euro del Banco de España, 15 subastas judiciales, licitaciones de cableado y hasta la sucesión en el título de Marqués de Heredia: 31 de las 36 disposiciones pasan de largo, que es justo lo que debe hacer un detector de señal.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Composición de la muestra</div>
+  <h2>36 disposiciones, por sección</h2>
+  <div class="bars">
+    <span class="lab">IV</span><div class="track"><div class="bar-fill" style="width:100%"></div></div><span class="n">15 · admón. de justicia</span>
+    <span class="lab">II-B</span><div class="track"><div class="bar-fill" style="width:40%"></div></div><span class="n">6 · oposiciones</span>
+    <span class="lab">V-A</span><div class="track"><div class="bar-fill" style="width:33%"></div></div><span class="n">5 · contratación</span>
+    <span class="lab">II-A</span><div class="track"><div class="bar-fill" style="width:27%;background:var(--heat-3)"></div></div><span class="n">4 · nombramientos ◆</span>
+    <span class="lab">III</span><div class="track"><div class="bar-fill" style="width:20%;background:var(--heat-3)"></div></div><span class="n">3 · otras disposiciones ◆</span>
+    <span class="lab">V-B</span><div class="track"><div class="bar-fill" style="width:20%"></div></div><span class="n">3 · otros anuncios</span>
+    <span class="hint">◆ Las minas del producto: la II-A (nombramientos y ceses) y la III (indultos, subvenciones, convenios). El muestreo fue aleatorio por bytes, así que pesan las secciones voluminosas; la ingesta real filtrará por sección desde el sumario.</span>
+  </div>
+
+  <details>
+    <summary>Ver la muestra completa (36 documentos)</summary>
+    <div class="tblwrap">
+      <table>
+        <thead><tr><th>BOE ID</th><th>Fecha</th><th>Sec.</th><th>Etiquetas</th><th style="text-align:right">Entierro</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </details>
+</section>
+
+<div class="notes">
+  <div class="eyebrow">Notas de método</div>
+  <p><b>Fidelidad:</b> los 36 títulos están transcritos literalmente de la cabecera de cada PDF (dataset espejo <span class="mono">Paulosdeanllons/ODS_BOE</span>, Hugging Face, texto extraído de los PDF de boe.es). Los cortados por la ventana de lectura terminan en «…». Las etiquetas y los índices los calculó el código real de la Fase 0, no esta página.</p>
+  <p><b>Una corrección a la spec ya aplicada:</b> los indultos reales se titulan «por el que <em>se indulta</em> a don…», no «indulto»; la regla usa el lexema <span class="mono">indult</span>. En esta muestra aleatoria no cayó ninguno (son ~100–150 al año entre cientos de miles de anuncios): la validación con 10 sumarios completos de la API los cubrirá.</p>
+  <p><b>Siguiente paso:</b> permitir <span class="mono">boe.es</span> en la red del entorno y ejecutar <span class="mono">validate_fase0.py</span> contra 10 fechas reales de la API oficial. El código está en la rama <span class="mono">claude/claude-md-fase-0-v7fl0o</span>.</p>
+</div>
+</main>
+
+<script>
+const docs=[
+["BOE-A-2020-8650","2020-07-28","II-A","libre_designacion",0],
+["BOE-A-2020-12504","2020-10-19","II-A","nombramiento",0],
+["BOE-A-2021-5214","2021-04-02","II-A","nombramiento",30],
+["BOE-A-2021-11969","2021-07-19","II-A","—",0],
+["BOE-A-2020-3182","2020-03-05","II-B","libre_designacion",0],
+["BOE-A-2021-12721","2021-07-29","II-B","—",0],
+["BOE-A-2020-819","2020-01-20","II-B","—",0],
+["BOE-A-2020-9504","2020-08-11","II-B","—",25],
+["BOE-A-2020-10285","2020-09-07","II-B","—",0],
+["BOE-A-2021-19404","2021-11-25","II-B","—",0],
+["BOE-A-2021-21967","2021-12-31","III","—",85],
+["BOE-A-2022-3040","2022-02-25","III","convenio",30],
+["BOE-A-2021-6871","2021-04-27","III","—",0],
+["BOE-B-2021-19279","2021-04-21","V-B","—",0],
+["BOE-B-2021-35541","2021-08-14","V-B","—",55],
+["BOE-B-2020-6755","2020-02-15","V-B","—",0],
+["BOE-B-2021-51633","2021-12-22","V-A","—",0],
+["BOE-B-2021-7302","2021-02-16","V-A","—",0],
+["BOE-B-2021-8732","2021-02-23","V-A","—",0],
+["BOE-B-2021-21372","2021-05-01","V-A","—",0],
+["BOE-B-2020-14683","2020-06-03","V-A","—",0],
+["BOE-B-2022-1289","2022-01-18","IV","—",0],
+["BOE-B-2021-39926","2021-09-27","IV","—",0],
+["BOE-B-2021-18681","2021-04-19","IV","—",0],
+["BOE-B-2020-29843","2020-09-15","IV","—",0],
+["BOE-B-2021-2533","2021-01-23","IV","—",0],
+["BOE-B-2020-14947","2020-06-06","IV","—",0],
+["BOE-B-2020-1807","2020-01-18","IV","—",0],
+["BOE-B-2020-47789","2020-12-19","IV","—",0],
+["BOE-B-2020-28110","2020-09-05","IV","—",0],
+["BOE-B-2021-42476","2021-10-19","IV","—",0],
+["BOE-B-2020-14757","2020-06-04","IV","—",0],
+["BOE-B-2021-24966","2021-05-19","IV","—",0],
+["BOE-B-2020-36882","2020-10-23","IV","—",0],
+["BOE-B-2021-15844","2021-03-31","IV","—",0],
+["BOE-B-2021-16474","2021-04-06","IV","—",0],
+];
+document.getElementById("tbody").innerHTML=docs.map(([id,f,s,c,e])=>{
+  const heat=e>=80?"var(--heat-4)":e>=50?"var(--heat-3)":e>=25?"var(--heat-2)":"var(--ink-faint)";
+  return `<tr><td class="mono"><a href="https://www.boe.es/diario_boe/txt.php?id=${id}">${id}</a></td>`+
+  `<td class="mono">${f}</td><td class="mono">${s}</td>`+
+  `<td>${c==="—"?'<span style="color:var(--ink-faint)">—</span>':`<span class="mono" style="font-size:12px">${c}</span>`}</td>`+
+  `<td class="num" style="color:${heat}">${e}</td></tr>`;
+}).join("");
+</script>
