@@ -1,0 +1,397 @@
+<title>Cortinas de humo</title>
+<style>
+  :root {
+    --papel: #F6F4ED;
+    --papel-hueso: #EFECE1;
+    --tinta: #201F1A;
+    --tinta-suave: #55524A;
+    --humo: #8B8578;
+    --marcador: #FFE23D;
+    --alarma: #A03D10;
+    --alarma-tenue: #EBD9B4;
+    --linea: #D8D3C4;
+    --tarjeta: #FBFAF5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --papel: #1B1A16;
+      --papel-hueso: #232119;
+      --tinta: #EDEAE0;
+      --tinta-suave: #B5B0A2;
+      --humo: #8B8578;
+      --marcador: #E0C428;
+      --alarma: #E0703C;
+      --alarma-tenue: #3A2A1C;
+      --linea: #3A382F;
+      --tarjeta: #24221C;
+    }
+  }
+  :root[data-theme="dark"] {
+    --papel: #1B1A16;
+    --papel-hueso: #232119;
+    --tinta: #EDEAE0;
+    --tinta-suave: #B5B0A2;
+    --humo: #8B8578;
+    --marcador: #E0C428;
+    --alarma: #E0703C;
+    --alarma-tenue: #3A2A1C;
+    --linea: #3A382F;
+    --tarjeta: #24221C;
+  }
+
+  body {
+    background: var(--papel);
+    color: var(--tinta);
+    font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .pagina { max-width: 780px; margin: 0 auto; padding: 40px 20px 80px; }
+
+  .caslon { font-family: "Libre Caslon Text", Georgia, "Times New Roman", serif; }
+  .mono { font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace; }
+
+  .cabecera { border-bottom: 3px double var(--tinta); padding-bottom: 24px; margin-bottom: 8px; }
+  .antetitulo {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--alarma); margin: 0 0 14px;
+  }
+  h1 {
+    font-family: "Libre Caslon Text", Georgia, serif;
+    font-size: clamp(38px, 7vw, 62px);
+    line-height: 1.04; margin: 0 0 18px; text-wrap: balance; font-weight: 700;
+  }
+  h1 em { font-style: italic; }
+  .entradilla { font-size: 18px; line-height: 1.55; color: var(--tinta-suave); max-width: 60ch; margin: 0; }
+  .entradilla mark, p mark {
+    background: var(--marcador); color: #201F1A; padding: 0 3px;
+  }
+
+  .aviso {
+    background: var(--papel-hueso); border-left: 4px solid var(--humo);
+    padding: 12px 16px; font-size: 13.5px; color: var(--tinta-suave);
+    margin: 20px 0 48px;
+  }
+  .aviso strong { color: var(--tinta); }
+
+  /* ── Expedientes ── */
+  .expediente { margin: 0 0 64px; }
+  .exp-cabecera {
+    display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap;
+    border-top: 3px solid var(--tinta); padding-top: 14px; margin-bottom: 6px;
+  }
+  .exp-num {
+    font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--papel); background: var(--alarma);
+    padding: 3px 10px;
+  }
+  .exp-fecha {
+    font-family: "IBM Plex Mono", monospace; font-size: 12.5px; color: var(--tinta-suave);
+    letter-spacing: 0.06em;
+  }
+  .exp-entierro {
+    margin-left: auto; font-family: "IBM Plex Mono", monospace; font-size: 12.5px;
+    color: var(--alarma); font-weight: 600; white-space: nowrap;
+  }
+  h2 {
+    font-family: "Libre Caslon Text", Georgia, serif;
+    font-size: clamp(25px, 4.4vw, 34px); line-height: 1.15;
+    margin: 8px 0 20px; text-wrap: balance; font-weight: 700;
+  }
+
+  .careo { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--linea); }
+  @media (max-width: 620px) { .careo { grid-template-columns: 1fr; } }
+  .panel { padding: 18px 20px 20px; }
+  .panel + .panel { border-left: 1px solid var(--linea); }
+  @media (max-width: 620px) { .panel + .panel { border-left: none; border-top: 1px solid var(--linea); } }
+  .panel-cortina { background: var(--papel-hueso); }
+  .panel-boletin { background: var(--tarjeta); }
+  .panel-rotulo {
+    font-family: "IBM Plex Mono", monospace; font-size: 11.5px; letter-spacing: 0.16em;
+    text-transform: uppercase; margin: 0 0 10px; font-weight: 600;
+  }
+  .panel-cortina .panel-rotulo { color: var(--humo); }
+  .panel-boletin .panel-rotulo { color: var(--alarma); }
+  .panel p { margin: 0 0 10px; font-size: 14.5px; }
+  .panel p:last-child { margin-bottom: 0; }
+  .boe-id {
+    font-family: "IBM Plex Mono", monospace; font-size: 12.5px;
+    background: var(--alarma-tenue); color: var(--tinta); padding: 1px 5px; white-space: nowrap;
+  }
+
+  .lectura { margin: 22px 0 0; }
+  .lectura h3 {
+    font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--tinta-suave); margin: 18px 0 6px; font-weight: 600;
+  }
+  .lectura p { margin: 0 0 10px; max-width: 68ch; }
+
+  .fuentes { margin-top: 14px; font-size: 13px; color: var(--tinta-suave); }
+  .fuentes a { color: var(--alarma); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  .fuentes a:hover { background: var(--marcador); color: #201F1A; }
+
+  a { color: var(--tinta); }
+
+  /* ── Cierre ── */
+  .cierre {
+    border-top: 3px double var(--tinta); padding-top: 22px; margin-top: 60px;
+    font-size: 14px; color: var(--tinta-suave); max-width: 68ch;
+  }
+  .cierre strong { color: var(--tinta); }
+  .firma {
+    margin-top: 26px; font-family: "IBM Plex Mono", monospace; font-size: 12px;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--humo);
+  }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap">
+
+<div class="pagina">
+  <header class="cabecera">
+    <p class="antetitulo">BOE Despega · Dosier especial · Junio – Agosto 2026</p>
+    <h1>Lo que el BOE coló mientras <em>tú mirabas el incendio</em></h1>
+    <p class="entradilla">
+      Tres meses, cinco expedientes. Cada vez que España entera miraba a un solo sitio —el Papa,
+      el Mundial, las llamas, Ceuta—, el Boletín Oficial del Estado publicaba
+      <mark>medallas, transferencias, subvenciones a dedo y facturas al ciudadano</mark>
+      que apenas encontraron un titular. Aquí está el careo, día a día, con enlace a cada documento.
+    </p>
+  </header>
+
+  <p class="aviso">
+    <strong>Aviso del editor:</strong> todo lo que sigue es real y enlazable: cada disposición existe en boe.es
+    y cada portada existe en la hemeroteca. Lo que este dosier documenta es la <strong>coincidencia temporal</strong>
+    y lo que cada norma significa. La intención de quien eligió las fechas no consta en el BOE — se señala el patrón,
+    no se afirma el motivo. El «índice de entierro» (0–100) mide lo propicio del día para pasar desapercibido:
+    viernes, vísperas de festivo, agosto.
+  </p>
+
+  <!-- ══════════ CASO 1 ══════════ -->
+  <article class="expediente">
+    <div class="exp-cabecera">
+      <span class="exp-num">Expediente 1</span>
+      <span class="exp-fecha">Viernes 12 · junio · 2026</span>
+      <span class="exp-entierro">entierro 30</span>
+    </div>
+    <h2>El día que el Papa se despedía, Interior condecoró a Carmen Calvo</h2>
+    <div class="careo">
+      <div class="panel panel-cortina">
+        <p class="panel-rotulo">La cortina</p>
+        <p>Séptimo y último día completo de la visita de León XIV a España (6–12 de junio): Madrid,
+        Barcelona y Canarias, la primera visita papal a Madrid en 15 años. Portadas, especiales y directos
+        monopolizados. De fondo, el ciclo de escándalos que atenazaba al Gobierno: el caso Leire Díez
+        y las pesquisas sobre el hermano del presidente.</p>
+      </div>
+      <div class="panel panel-boletin">
+        <p class="panel-rotulo">El boletín</p>
+        <p>El BOE de ese viernes publica el Real Decreto 475/2026: la <strong>Gran Cruz de la Orden del
+        Mérito a la Seguridad para María del Carmen Calvo Poyato</strong>, exvicepresidenta del Gobierno
+        (PSOE) y hoy presidenta del Consejo de Estado. <span class="boe-id">BOE-A-2026-12783</span></p>
+        <p>En el mismo número: una <strong>subvención directa</strong> —sin concurrencia— a la Fundación
+        IMEC Spain para microelectrónica <span class="boe-id">BOE-A-2026-12713</span> y la reordenación
+        de todos los organismos públicos estatales <span class="boe-id">BOE-A-2026-12711</span>.</p>
+      </div>
+    </div>
+    <div class="lectura">
+      <h3>Qué significa</h3>
+      <p>El Gobierno concede su máxima condecoración de seguridad —una orden creada en 2025— a una de las
+      figuras históricas del partido que gobierna, «por su gestión en la covid y en favor del feminismo».
+      Un premio político con nombre y apellidos, aprobado en el Consejo de Ministros del día 9… con el Papa
+      todavía en España.</p>
+      <h3>Por qué así</h3>
+      <p>Una medalla de un Gobierno a los suyos es munición segura para la oposición. Ese viernes solo la
+      recogieron agencias y digitales; los grandes medios estaban en la despedida papal. La entrega física,
+      el lunes 15, ya llegó como hecho consumado.</p>
+      <p class="fuentes">Fuentes:
+        <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-12783">BOE-A-2026-12783</a> ·
+        <a href="https://theobjective.com/espana/politica/2026-06-15/marlaska-carmen-calvo-covid-feminismo/">The Objective 15-06</a> ·
+        <a href="https://www.infobae.com/espana/agencias/2026/06/12/interior-concede-la-gran-cruz-de-la-orden-del-merito-a-la-seguridad-a-la-exvicepresidenta-carmen-calvo/">Infobae 12-06</a> ·
+        <a href="https://www.vatican.va/content/leo-xiv/es/travels/2026/documents/spagna-6-12giugno2026.html">Vaticano · programa del viaje</a>
+      </p>
+    </div>
+  </article>
+
+  <!-- ══════════ CASO 2 ══════════ -->
+  <article class="expediente">
+    <div class="exp-cabecera">
+      <span class="exp-num">Expediente 2</span>
+      <span class="exp-fecha">Viernes 24 · julio · 2026</span>
+      <span class="exp-entierro">entierro 30</span>
+    </div>
+    <h2>El BOE de la emergencia nacional traía dos traspasos al País Vasco</h2>
+    <div class="careo">
+      <div class="panel panel-cortina">
+        <p class="panel-rotulo">La cortina</p>
+        <p>España declara por primera vez en su historia la <strong>emergencia de interés nacional por
+        incendios forestales</strong> (Madrid y Ávila): más de 63.000 evacuados, un detenido por el fuego
+        de Ávila. La orden se publica en el BOE de ese mismo viernes
+        <span class="boe-id">BOE-A-2026-16093</span> y devora cada minuto de televisión.</p>
+      </div>
+      <div class="panel panel-boletin">
+        <p class="panel-rotulo">El boletín</p>
+        <p>Unas páginas más abajo, el mismo BOE publica dos reales decretos firmados <strong>nueve días
+        antes</strong> (el 15 de julio): la ampliación del traspaso al País Vasco en materia de
+        <strong>tráfico y circulación de vehículos</strong> <span class="boe-id">BOE-A-2026-16151</span>
+        y el traspaso de los <strong>Seguros Agrarios Combinados</strong>
+        <span class="boe-id">BOE-A-2026-16152</span>.</p>
+      </div>
+    </div>
+    <div class="lectura">
+      <h3>Qué significa</h3>
+      <p>Cesiones competenciales al País Vasco: exactamente el tipo de decisión que en semana tranquila
+      abre tertulias y editoriales sobre el precio del apoyo parlamentario nacionalista. Firmados el 15,
+      podían haberse publicado cualquier día de esa semana; salieron el viernes en que ardía media meseta.</p>
+      <h3>Por qué así</h3>
+      <p>El viernes ya puntúa 30 en el índice de entierro. Con emergencia nacional encima, la probabilidad
+      de que un traspaso competencial llegue a portada es cero. No consta cobertura relevante ese día.</p>
+      <p class="fuentes">Fuentes:
+        <a href="https://www.boe.es/boe/dias/2026/07/24/">Sumario BOE 24-07</a> ·
+        <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16093">Orden de emergencia INT/748/2026</a> ·
+        <a href="https://www.youtube.com/watch?v=eX5JGZipBoo">Euronews 24-07 · emergencia nacional</a>
+      </p>
+    </div>
+  </article>
+
+  <!-- ══════════ CASO 3 ══════════ -->
+  <article class="expediente">
+    <div class="exp-cabecera">
+      <span class="exp-num">Expediente 3</span>
+      <span class="exp-fecha">Viernes 31 · julio · 2026</span>
+      <span class="exp-entierro">entierro 30</span>
+    </div>
+    <h2>Con Sánchez en Ceuta y el Ejército en la valla, el viernes en que se despachó todo</h2>
+    <div class="careo">
+      <div class="panel panel-cortina">
+        <p class="panel-rotulo">La cortina</p>
+        <p>Crisis migratoria en Ceuta: miles de cruces desde Marruecos, al menos nueve muertos, las
+        Fuerzas Armadas desplegadas. Sánchez y Marlaska visitan la ciudad el 31 mientras el presidente
+        acusa de «egoísta» la respuesta de la UE. Es además el último día laborable antes del éxodo
+        de agosto, y el BOE certifica el fin de la emergencia por incendios
+        <span class="boe-id">BOE-A-2026-16657</span>.</p>
+      </div>
+      <div class="panel panel-boletin">
+        <p class="panel-rotulo">El boletín</p>
+        <p>Ese único BOE despacha: la <strong>Ley Orgánica 3/2026 de transferencia de la AP-9 a
+        Galicia</strong> <span class="boe-id">BOE-A-2026-16652</span>, en vigor al día siguiente;
+        un real decreto que regula <strong>subvenciones directas «en determinados ámbitos» del Ministerio
+        del Interior</strong> <span class="boe-id">BOE-A-2026-16656</span>; otra <strong>subvención
+        directa a Canarias</strong> <span class="boe-id">BOE-A-2026-16660</span>; y el nuevo régimen de
+        <strong>planes de inversión de las redes eléctricas</strong> tras el gran apagón
+        <span class="boe-id">BOE-A-2026-16661</span>.</p>
+      </div>
+    </div>
+    <div class="lectura">
+      <h3>Qué significa</h3>
+      <p>La AP-9 es la mayor cesión de infraestructuras a Galicia en décadas —una ley de Congreso, no un
+      decreto, pero sancionada y publicada para entrar en vigor el 1 de agosto, con la negociación
+      Estado-Xunta por delante. El decreto de Interior institucionaliza un canal de dinero
+      <em>sin concurrencia</em> en el ministerio más sensible del momento. Y la regulación de las redes
+      eléctricas decide quién invierte —y quién cobra— tras el apagón de abril.</p>
+      <h3>Por qué así</h3>
+      <p>Publicar el viernes 31 de julio es jugar con ventaja doble: el país entra en agosto y la agenda
+      informativa está secuestrada por Ceuta. Solo la prensa gallega contó la AP-9; el decreto de
+      subvenciones de Interior no tuvo ni una línea en la prensa generalista.</p>
+      <p class="fuentes">Fuentes:
+        <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-16652">BOE-A-2026-16652</a> ·
+        <a href="https://www.elcorreogallego.es/galicia/2026/07/31/traspaso-ap-9-galicia-ley-132990605.html">El Correo Gallego 31-07</a> ·
+        <a href="https://www.galiciapress.es/articulo/ultima-hora/2026-07-31/5971708-boe-publica-ley-regula-traspaso-ap-9-galicia-tendran-acordar-estado-comunidad">Galiciapress 31-07</a> ·
+        <a href="https://www.boe.es/boe/dias/2026/07/31/">Sumario BOE 31-07</a>
+      </p>
+    </div>
+  </article>
+
+  <!-- ══════════ CASO 4 ══════════ -->
+  <article class="expediente">
+    <div class="exp-cabecera">
+      <span class="exp-num">Expediente 4</span>
+      <span class="exp-fecha">Lunes 3 · agosto · 2026</span>
+      <span class="exp-entierro">entierro 25</span>
+    </div>
+    <h2>La factura del gran apagón, a tu recibo de la luz — el primer lunes de agosto</h2>
+    <div class="careo">
+      <div class="panel panel-cortina">
+        <p class="panel-rotulo">La cortina</p>
+        <p>Primer lunes de agosto: redacciones bajo mínimos, el país en la playa. La poca atención política
+        del día se la lleva la sentencia del Constitucional 54/2026 sobre la amnistía… publicada en ese
+        mismo BOE.</p>
+      </div>
+      <div class="panel panel-boletin">
+        <p class="panel-rotulo">El boletín</p>
+        <p>La CNMC publica la resolución que reparte <strong>38,7 millones de euros de costes del apagón
+        de abril</strong> entre los consumidores: 12 mensualidades en el recibo de la luz. El Estado queda
+        <strong>excluido</strong> del reparto. <span class="boe-id">BOE-A-2026-16925</span></p>
+      </div>
+    </div>
+    <div class="lectura">
+      <h3>Qué significa</h3>
+      <p>Que el coste de la mayor crisis eléctrica reciente lo paga el ciudadano en su factura, no los
+      Presupuestos. Una decisión impopular por definición, ejecutada por resolución de un regulador y no
+      por una norma con debate parlamentario.</p>
+      <h3>Por qué así</h3>
+      <p>Agosto suma 25 puntos de entierro por sí solo. Solo la prensa económica lo contó; en septiembre,
+      cuando llegue el recibo, la resolución ya será vieja.</p>
+      <p class="fuentes">Fuentes:
+        <a href="https://www.boe.es/boe/dias/2026/08/03/">Sumario BOE 03-08</a> ·
+        <a href="https://www.elespanol.com/invertia/empresas/energia/20260803/cnmc-aprueba-repartir-millones-costes-apagon-consumidores/">El Español 03-08</a> ·
+        <a href="https://www.roams.es/luz/blog/mercado-energetico/coste-apagon-factura-luz/">Roams · análisis</a>
+      </p>
+    </div>
+  </article>
+
+  <!-- ══════════ CASO 5 ══════════ -->
+  <article class="expediente">
+    <div class="exp-cabecera">
+      <span class="exp-num">Expediente 5</span>
+      <span class="exp-fecha">Viernes 14 · agosto · 2026</span>
+      <span class="exp-entierro">entierro 85 — máximo del trimestre</span>
+    </div>
+    <h2>Almaraz hasta 2030, anunciada con España en llamas y saliendo de puente</h2>
+    <div class="careo">
+      <div class="panel panel-cortina">
+        <p class="panel-rotulo">La cortina</p>
+        <p>240.785 hectáreas quemadas en el año, 42 grandes incendios activos. Cada portada, cada
+        telediario, cada conversación: fuego. Y es viernes, víspera de la Asunción, pleno agosto —
+        el día estadísticamente perfecto para publicar lo que no quieres que se lea.</p>
+      </div>
+      <div class="panel panel-boletin">
+        <p class="panel-rotulo">El boletín</p>
+        <p>El MITECO publica la <strong>renovación de la central nuclear de Almaraz hasta junio de
+        2030</strong> <span class="boe-id">BOE-A-2026-17756</span> — orden firmada el día 12, con el
+        expediente en trámite desde octubre de 2025: la fecha de publicación se eligió. En el mismo BOE,
+        la resolución sobre el <strong>Pazo de Meirás</strong> <span class="boe-id">BOE-A-2026-17754</span>.
+        Dos días antes, el 12, se había colado la <strong>encomienda para montar el asilo exprés en
+        frontera</strong> <span class="boe-id">BOE-A-2026-17614</span> con Ceuta aún en portada.</p>
+      </div>
+    </div>
+    <div class="lectura">
+      <h3>Qué significa</h3>
+      <p>Almaraz es la decisión nuclear más sensible de la legislatura: prolongar la vida de la central
+      que el calendario oficial mandaba cerrar, con Iberdrola, Endesa y Naturgy como propietarias. Un giro
+      de política energética anunciado, literalmente, a través del BOE de un viernes de puente de agosto.
+      La encomienda de asilo, por su parte, construye la maquinaria administrativa de las devoluciones
+      exprés — y solo la contaron blogs jurídicos.</p>
+      <h3>Por qué así</h3>
+      <p>85 sobre 100 de índice de entierro: el máximo de los tres meses. Si existe el manual del entierro
+      perfecto, este BOE es su página uno.</p>
+      <p class="fuentes">Fuentes:
+        <a href="https://www.boe.es/boe/dias/2026/08/14/">Sumario BOE 14-08</a> ·
+        <a href="https://www.libremercado.com/2026-08-14/el-gobierno-aprueba-la-extension-de-la-vida-util-de-almaraz-hasta-2030-7278574/">Libre Mercado 14-08</a> ·
+        <a href="https://www.moncloa.com/economia/almaraz-renovacion-boe/">Moncloa 15-08</a> ·
+        <a href="https://es.wikipedia.org/wiki/Incendios_forestales_de_Espa%C3%B1a_de_2026">Incendios de 2026 · Wikipedia</a>
+      </p>
+    </div>
+  </article>
+
+  <footer class="cierre">
+    <p><strong>Lo que este trimestre enseña:</strong> el patrón no es un día suelto — es un método.
+    Viernes, vísperas, agosto y, sobre todo, los días en que una sola noticia devora todas las demás.
+    De los cinco expedientes, <strong>cuatro cayeron en viernes</strong> y los cinco coincidieron con la
+    mayor cortina informativa de su semana. Un lunes cualquiera de julio, en cambio, el BOE no traía nada
+    que esconder — lo comprobamos.</p>
+    <p>Y la honestidad de siempre: la coincidencia está documentada; la intención, no. Este dosier señala
+    fechas y enlaza documentos. Juzgar es cosa del lector.</p>
+    <p class="firma">BOE Despega · dosier elaborado sobre sumarios reales del BOE (espejo datania/boe,
+    sincronizado hasta el 15-08) y hemeroteca · datos, no opiniones inventadas</p>
+  </footer>
+</div>
