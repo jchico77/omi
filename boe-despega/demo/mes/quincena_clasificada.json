@@ -1,0 +1,1537 @@
+[
+ {
+  "fecha": "2026-08-01",
+  "num_boe": 187,
+  "total": 134,
+  "por_seccion": {
+   "I": 3,
+   "II-A": 10,
+   "II-B": 29,
+   "III": 46,
+   "IV": 32,
+   "V-B": 14
+  },
+  "rangos": {
+   "A": [
+    "BOE-A-2026-16756",
+    "BOE-A-2026-16843"
+   ],
+   "B": [
+    "BOE-B-2026-25831",
+    "BOE-B-2026-25876"
+   ]
+  },
+  "convenios_iii": 26,
+  "items": [
+   {
+    "id": "BOE-A-2026-16756",
+    "sec": "I",
+    "dep": "Ministerio de Hacienda",
+    "titulo": "Resolución de 31 de julio de 2026, de la Presidencia del Comisionado para el Mercado de Tabacos, por la que se publican los precios de venta al público de determinadas labores de tabaco en Expendedurías de Tabaco y Timbre del área del Monopolio.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-16757",
+    "sec": "I",
+    "dep": "Ministerio de Trabajo y Economía Social",
+    "titulo": "Orden TES/804/2026, de 23 de julio, por la que se aprueba la Política de Seguridad de la Información y de los Servicios en el ámbito de la administración digital del Ministerio de Trabajo y Economía Social y se crea el Comité de Seguridad de las Tecnologías de la Información y las Comunicaciones del departamento.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-16758",
+    "sec": "I",
+    "dep": "Comunidad Autónoma de Cataluña",
+    "titulo": "Resolución ISP/1933/2026, de 15 de junio, de modificación de la Resolución ISP/300/2026, de 6 de febrero, por la que se establecen las restricciones a la circulación durante el año 2026.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-16759",
+    "sec": "II-A",
+    "dep": "Consejo General del Poder Judicial",
+    "titulo": "Acuerdo de 7 de abril de 2026, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se declara la jubilación voluntaria de la Magistrada doña María Piedad Marín Sánchez.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-16760",
+    "sec": "II-A",
+    "dep": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "titulo": "Resolución de 28 de julio de 2026, de la Subsecretaría, por la que se resuelve parcialmente la convocatoria de libre designación, efectuada por Resolución de 4 de mayo de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16761",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 21 de julio de 2026, de la Universidad de Alicante, por la que se nombra Catedrático de Universidad a don José Antonio Padilla García.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16762",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 21 de julio de 2026, de la Universidad de La Laguna, por la que se nombra Catedrático de Universidad don Manuel Jesús Rodríguez Valido.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16763",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 21 de julio de 2026, de la Universidad de Sevilla, por la que se nombra Catedrática de Universidad a doña Raquel López Ortega.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16764",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 21 de julio de 2026, de la Universidad de Sevilla, por la que se nombran Profesoras Titulares de Universidad.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16765",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 21 de julio de 2026, de la Universidad de Sevilla, por la que se nombran Profesoras y Profesores Titulares de Universidad.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16766",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 22 de julio de 2026, la Universidad del País Vasco/Euskal Herriko Unibertsitatea, por la que se nombra Profesor Titular de Universidad a don Edorta Santos Vizcaino.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16767",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 23 de julio de 2026, de la Universidad de Huelva, por la que se nombra Profesora Titular de Universidad a doña María Ángeles Fuentes Domínguez.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16768",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 23 de julio de 2026, de la Universidad de León, por la que se nombra Profesora Titular de Universidad a doña Inés Casado Verdejo.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16769",
+    "sec": "II-B",
+    "dep": "Ministerio de Hacienda",
+    "titulo": "Resolución de 27 de julio de 2026, de la Presidencia de la Autoridad Independiente de Responsabilidad Fiscal, AAI, por la que se prorroga el plazo para la resolución de la convocatoria de provisión de puesto de trabajo por el sistema de libre designación, efectuada por Resolución de 28 de mayo de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16771",
+    "sec": "II-B",
+    "dep": "Ministerio de Política Territorial y Memoria Democrática",
+    "titulo": "Resolución de 28 de julio de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16775",
+    "sec": "II-B",
+    "dep": "Comisión Nacional de los Mercados y la Competencia",
+    "titulo": "Resolución de 27 de julio de 2026, de la Comisión Nacional de los Mercados y la Competencia, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16776",
+    "sec": "II-B",
+    "dep": "Administración Local",
+    "titulo": "Resolución de 17 de julio de 2026, del Ayuntamiento de Andratx (Illes Balears), referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16777",
+    "sec": "II-B",
+    "dep": "Administración Local",
+    "titulo": "Resolución de 20 de julio de 2026, del Ayuntamiento de L'Alcúdia (Valencia/València), referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16778",
+    "sec": "II-B",
+    "dep": "Administración Local",
+    "titulo": "Resolución de 20 de julio de 2026, del Ayuntamiento de Pozuelo de Alarcón (Madrid), referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16779",
+    "sec": "II-B",
+    "dep": "Administración Local",
+    "titulo": "Resolución de 23 de julio de 2026, del Ayuntamiento de Almería, Empresa Municipal Almería Turística, SA, referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16780",
+    "sec": "II-B",
+    "dep": "Administración Local",
+    "titulo": "Resolución de 23 de julio de 2026, del Ayuntamiento de Granada, referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16782",
+    "sec": "II-B",
+    "dep": "Administración Local",
+    "titulo": "Resolución de 27 de julio de 2026, del Ayuntamiento de Vigo (Pontevedra), referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16783",
+    "sec": "II-B",
+    "dep": "Administración Local",
+    "titulo": "Resolución de 28 de julio de 2026, del Ayuntamiento de Ourense, referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16784",
+    "sec": "II-B",
+    "dep": "Administración Local",
+    "titulo": "Resolución de 28 de julio de 2026, de la Diputación Provincial de Badajoz, referente a la convocatoria para proveer puestos de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16785",
+    "sec": "II-B",
+    "dep": "Administración Local",
+    "titulo": "Resolución de 29 de julio de 2026, de la Diputación Provincial de Granada, referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16786",
+    "sec": "II-B",
+    "dep": "Administración Local",
+    "titulo": "Resolución de 30 de julio de 2026, del Ayuntamiento de Oviedo (Asturias), referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16807",
+    "sec": "III",
+    "dep": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "titulo": "Orden PJC/808/2026, de 30 de julio, por la que se concretan determinados aspectos del procedimiento para el aplazamiento y fraccionamiento del pago con dispensa de garantía a pequeñas y medianas empresas de alta intensidad inversora en I+D+I, para las cuotas de préstamos de determinadas convocatorias de los programas estatales de investigación, desarrollo e innovación orientada a los retos de la sociedad y para impulsar la investigación científico-técnica y su transferencia.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-16822",
+    "sec": "III",
+    "dep": "Ministerio de Trabajo y Economía Social",
+    "titulo": "Resolución de 30 de julio de 2026, de la Dirección General del Servicio Público de Empleo Estatal, por la que se regula la tramitación del procedimiento de reconocimiento de las prestaciones por desempleo reguladas en el Real Decreto-ley 20/2026, de 29 de julio, por el que se establecen medidas urgentes de protección laboral y social frente a los incendios forestales.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-16837",
+    "sec": "III",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Orden TDF/811/2026, de 22 de julio, por la que se establecen las bases reguladoras para la creación de infraestructuras para la investigación, el ensayo y la experimentación en tecnologías de uso dual.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-16838",
+    "sec": "III",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Orden TDF/812/2026, de 28 de julio, por la que se establecen las bases reguladoras de la concesión de ayudas para la provisión del conjunto de equipamiento activo e infraestructura auxiliar necesaria para dotar de servicios de comunicaciones móviles con tecnología 5G a zonas donde no hay señal de presencia de redes móviles 4G/5G de ningún operador y primera convocatoria (5G Redes muy rurales).",
+    "categorias": []
+   }
+  ],
+  "indice_entierro_dia": 25
+ },
+ {
+  "fecha": "2026-08-03",
+  "num_boe": 188,
+  "total": 205,
+  "por_seccion": {
+   "II-A": 9,
+   "II-B": 36,
+   "III": 37,
+   "IV": 12,
+   "V-A": 42,
+   "V-B": 61,
+   "V-C": 2,
+   "TC": 6
+  },
+  "rangos": {
+   "A": [
+    "BOE-A-2026-16844",
+    "BOE-A-2026-16931"
+   ],
+   "B": [
+    "BOE-B-2026-25877",
+    "BOE-B-2026-25993"
+   ]
+  },
+  "convenios_iii": 17,
+  "notas": "El TC publica 5 sentencias y 1 auto, entre ellas la STC 54/2026 sobre la Ley Orgánica de amnistía.",
+  "items": [
+   {
+    "id": "BOE-A-2026-16844",
+    "sec": "II-A",
+    "dep": "Consejo General del Poder Judicial",
+    "titulo": "Acuerdo de 7 de abril de 2026, de la Comisión Permanente del Consejo General del Poder Judicial, por el que se declara la jubilación voluntaria anticipada del Magistrado don Jesús Souto Herreros.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-16845",
+    "sec": "II-A",
+    "dep": "Ministerio del Interior",
+    "titulo": "Resolución de 24 de julio de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 27 de abril de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16846",
+    "sec": "II-A",
+    "dep": "Ministerio de Educación, Formación Profesional y Deportes",
+    "titulo": "Orden EFD/813/2026, de 22 de julio, por la que, a propuesta de la Consejería de Educación de la Comunidad de Castilla y León, en ejecución de sentencia, se nombra funcionario de carrera del Cuerpo de Catedráticos de Enseñanza Secundaria a don Carlos González Díez.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16847",
+    "sec": "II-A",
+    "dep": "Ministerio de Educación, Formación Profesional y Deportes",
+    "titulo": "Orden EFD/814/2026, de 22 de julio, por la que, a propuesta de la Consejería de Educación, Ciencia y Universidades de la Comunidad de Madrid, se retrotraen los efectos del nombramiento como funcionaria de carrera del Cuerpo de Maestros a doña Esther García Ibáñez.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16848",
+    "sec": "II-A",
+    "dep": "Ministerio de Ciencia, Innovación y Universidades",
+    "titulo": "Orden CNU/815/2026, de 24 de julio, por la que se nombra Vicerrectora de Investigación, Postgrado y Aprendizaje de la Universidad Internacional Menéndez Pelayo a doña Amparo Mercedes Querol Simón.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16849",
+    "sec": "II-A",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Resolución de 20 de julio de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 17 de junio de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16850",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 23 de julio de 2026, de la Universidad Pompeu Fabra, por la que se nombra Catedrático de Universidad a don Carlos Ignacio Gómez Ligüerre.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16851",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 24 de julio de 2026, de la Universidad de Alicante, por la que se nombra Catedrática de Universidad a doña Carla Rodríguez Sánchez.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16852",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 24 de julio de 2026, de la Universidad de León, por la que se nombra Profesor Titular de Universidad a don Borja Amor Tapia.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16853",
+    "sec": "II-B",
+    "dep": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "titulo": "Resolución de 21 de julio de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16854",
+    "sec": "II-B",
+    "dep": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "titulo": "Resolución de 28 de julio de 2026, del Centro de Estudios Políticos y Constitucionales, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16860",
+    "sec": "II-B",
+    "dep": "Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+    "titulo": "Resolución de 23 de julio de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   }
+  ],
+  "indice_entierro_dia": 25
+ },
+ {
+  "fecha": "2026-08-04",
+  "num_boe": 189,
+  "total": 187,
+  "por_seccion": {
+   "II-A": 17,
+   "II-B": 31,
+   "III": 23,
+   "IV": 8,
+   "V-A": 49,
+   "V-B": 59
+  },
+  "rangos": {
+   "A": [
+    "BOE-A-2026-16932",
+    "BOE-A-2026-17002"
+   ],
+   "B": [
+    "BOE-B-2026-25994",
+    "BOE-B-2026-26109"
+   ]
+  },
+  "convenios_iii": 14,
+  "notas": "Primer cese del mes (Fiscalía). En III, asignación de subvenciones por los incendios de 2025 (BOE-A-2026-16992). En V-B, extractos de convocatorias de subvenciones en concurrencia (SEPE TándEM, Programa Auto+).",
+  "items": [
+   {
+    "id": "BOE-A-2026-16945",
+    "sec": "II-A",
+    "dep": "Ministerio Fiscal",
+    "titulo": "Decreto de 16 de julio de 2026, de la Fiscal General del Estado, por el que se dispone el cese de doña Aurora Pérez Abascal como Fiscal Decana y Delegada de Menores de la Fiscalía Provincial de Las Palmas.",
+    "categorias": [
+     "cese"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16933",
+    "sec": "II-A",
+    "dep": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "titulo": "Orden PJC/817/2026, de 23 de julio, por la que se nombra personal funcionario de carrera del Cuerpo de Tramitación Procesal y Administrativa de la Administración de Justicia, turno libre, por el ámbito de Andalucía, a las personas que superaron el proceso selectivo convocado por Orden JUS/1288/2022, de 22 de diciembre.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16934",
+    "sec": "II-A",
+    "dep": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "titulo": "Resolución de 28 de julio de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 8 de junio de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16936",
+    "sec": "II-A",
+    "dep": "Ministerio del Interior",
+    "titulo": "Resolución de 30 de julio de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 2 de julio de 2026, en los Servicios Centrales de la Secretaría General de Instituciones Penitenciarias.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16937",
+    "sec": "II-A",
+    "dep": "Ministerio de Educación, Formación Profesional y Deportes",
+    "titulo": "Orden EFD/818/2026, de 22 de julio, por la que, a propuesta del Departamento de Educación y Formación Profesional de la Comunidad Autónoma de Cataluña, en ejecución de sentencia, se modifican la Orden EFP/127/2022, de 21 de febrero, por la que se nombra personal funcionario de carrera de los Cuerpos de Profesores de Enseñanza Secundaria, Profesores Técnicos de Formación Profesional y Maestros…",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16938",
+    "sec": "II-A",
+    "dep": "Ministerio de Trabajo y Economía Social",
+    "titulo": "Resolución de 17 de julio de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 8 de mayo de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16940",
+    "sec": "II-A",
+    "dep": "Ministerio de Economía, Comercio y Empresa",
+    "titulo": "Resolución de 23 de julio de 2026, del Instituto de Contabilidad y Auditoría de Cuentas, por la que se nombra vocal titular y vocal suplente del Comité Consultivo de Contabilidad.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16941",
+    "sec": "II-A",
+    "dep": "Ministerio de Igualdad",
+    "titulo": "Resolución de 24 de julio de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 24 de junio de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16942",
+    "sec": "II-A",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Resolución de 28 de julio de 2026, de la Secretaría de Estado de Función Pública, por la que se nombra personal funcionario de carrera, por el sistema general de acceso libre, en el Cuerpo de Ingenieros Técnicos en Topografía.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16943",
+    "sec": "II-A",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Resolución de 29 de julio de 2026, de la Secretaría de Estado de Función Pública, por la que se nombra personal funcionario de carrera, por el sistema general de acceso libre, de la Escala de Titulados de Escuelas Técnicas de Grado Medio de Organismos del Ministerio de Transportes, Movilidad y Agenda Urbana, especialidad Seguridad e Interoperabilidad Ferroviaria.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16944",
+    "sec": "II-A",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Resolución de 29 de julio de 2026, de la Secretaría de Estado de Función Pública, por la que se nombra personal funcionario de carrera, por el sistema general de acceso libre, del Cuerpo de Ingenieros Técnicos Forestales.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16946",
+    "sec": "II-A",
+    "dep": "Ministerio Fiscal",
+    "titulo": "Decreto de 21 de julio de 2026, de la Fiscal General del Estado, por el que se nombra Fiscal Decana de la Sección Territorial de Langreo a doña Cristina Fernández Bances.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16947",
+    "sec": "II-A",
+    "dep": "Ministerio Fiscal",
+    "titulo": "Decreto de 21 de julio de 2026, de la Fiscal General del Estado, por el que se nombra Fiscal Delegada de la Sección de Cooperación Penal Internacional de la Fiscalía Provincial de Badajoz a doña Inmaculada Martín-Comas Fernández.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16948",
+    "sec": "II-A",
+    "dep": "Ministerio Fiscal",
+    "titulo": "Decreto de 23 de julio de 2026, de la Fiscal General del Estado, por el que se nombra Fiscal Delegada de la Jurisdicción Civil de la Fiscalía de la Comunidad Autónoma de Cantabria a doña Felicidad Andrés Puerto.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16951",
+    "sec": "II-B",
+    "dep": "Ministerio de Hacienda",
+    "titulo": "Resolución de 30 de julio de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16954",
+    "sec": "II-B",
+    "dep": "Ministerio de Ciencia, Innovación y Universidades",
+    "titulo": "Resolución de 28 de julio de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16955",
+    "sec": "II-B",
+    "dep": "Ministerio de Inclusión, Seguridad Social y Migraciones",
+    "titulo": "Resolución de 24 de julio de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16956",
+    "sec": "II-B",
+    "dep": "Agencia Española de Protección de Datos",
+    "titulo": "Resolución de 30 de julio de 2026, de la Agencia Española de Protección de Datos, por la que se prorroga el plazo para la resolución de la convocatoria de provisión de puesto de trabajo por el sistema de libre designación, efectuada por Resolución de 14 de mayo de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-16992",
+    "sec": "III",
+    "dep": "Ministerio de Política Territorial y Memoria Democrática",
+    "titulo": "Resolución de 30 de julio de 2026, de la Secretaría General de Coordinación Territorial, por la que se acuerda la asignación de las subvenciones para la recuperación de daños en infraestructuras municipales y red viaria provincial e insular, previstas en el apartado tercero del Acuerdo del Consejo de Ministros de 26 de agosto de 2025, por el que se declara «Zona afectada gravemente por una Emergencia de Protección Civil» el territorio afectado como consecuencia de los incendios forestales y otras emergencias de protección civil acaecidas entre el 23 de junio y el 25 de agosto de 2025.",
+    "categorias": []
+   }
+  ],
+  "indice_entierro_dia": 25
+ },
+ {
+  "fecha": "2026-08-05",
+  "num_boe": 190,
+  "total": 194,
+  "por_seccion": {
+   "I": 1,
+   "II-A": 17,
+   "II-B": 34,
+   "III": 21,
+   "V-A": 45,
+   "V-B": 76
+  },
+  "rangos": {
+   "A": [
+    "BOE-A-2026-17003",
+    "BOE-A-2026-17075"
+   ],
+   "B": [
+    "BOE-B-2026-26110",
+    "BOE-B-2026-26230"
+   ]
+  },
+  "convenios_iii": 6,
+  "notas": "Sin sección IV. 17 disposiciones de personal en II-A: 5 libres designaciones resueltas y nombramientos masivos (Policía Nacional, habilitados nacionales). Banco de España publica sanciones a Banco de Crédito Social Cooperativo (BOE-A-2026-17068).",
+  "items_resumen": {
+   "II-A_libre_designacion": [
+    "BOE-A-2026-17004",
+    "BOE-A-2026-17005",
+    "BOE-A-2026-17007",
+    "BOE-A-2026-17008",
+    "BOE-A-2026-17009"
+   ],
+   "II-A_nombramientos": [
+    "BOE-A-2026-17006",
+    "BOE-A-2026-17010",
+    "BOE-A-2026-17011",
+    "BOE-A-2026-17012",
+    "BOE-A-2026-17013",
+    "BOE-A-2026-17014",
+    "BOE-A-2026-17015",
+    "BOE-A-2026-17016",
+    "BOE-A-2026-17017",
+    "BOE-A-2026-17018",
+    "BOE-A-2026-17019",
+    "BOE-A-2026-17020"
+   ],
+   "II-B_libre_designacion": [
+    "BOE-A-2026-17022"
+   ]
+  },
+  "items": [
+   {
+    "id": "BOE-A-2026-17006",
+    "sec": "II-A",
+    "dep": "Ministerio del Interior",
+    "titulo": "Resolución de 22 de julio de 2026, de la Secretaría de Estado de Seguridad, por la que se nombra personal funcionario de carrera de la Policía Nacional, Escala Básica, categoría de Policía, a los Policías Alumnos, que han superado el proceso selectivo establecido reglamentariamente.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17010",
+    "sec": "II-A",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Orden TDF/820/2026, de 28 de julio, por la que se nombra personal funcionario de carrera, por el sistema general de acceso libre, de la Escala de funcionarios de administración local con habilitación de carácter nacional, Subescala de Secretaría, categoría de Entrada, y se asigna primer destino.",
+    "categorias": [
+     "nombramiento"
+    ]
+   }
+  ],
+  "indice_entierro_dia": 25
+ },
+ {
+  "fecha": "2026-08-06",
+  "num_boe": 191,
+  "total": 208,
+  "por_seccion": {
+   "I": 1,
+   "II-A": 12,
+   "II-B": 32,
+   "III": 66,
+   "V-A": 50,
+   "V-B": 46,
+   "V-C": 1
+  },
+  "rangos": {
+   "A": [
+    "BOE-A-2026-17076",
+    "BOE-A-2026-17186"
+   ],
+   "B": [
+    "BOE-B-2026-26231",
+    "BOE-B-2026-26327"
+   ]
+  },
+  "convenios_iii": 9,
+  "notas": "Sección I: solo la moneda de colección de oro dedicada al «Cerdo Ibérico» (BOE-A-2026-17076). La III va cargada de recursos registrales de la DGSJFP (23) y 9 fundaciones nuevas inscritas.",
+  "items_resumen": {
+   "II-A_nombramientos": [
+    "BOE-A-2026-17077",
+    "BOE-A-2026-17079",
+    "BOE-A-2026-17080",
+    "BOE-A-2026-17081",
+    "BOE-A-2026-17086",
+    "BOE-A-2026-17087",
+    "BOE-A-2026-17088"
+   ],
+   "II-A_libre_designacion": [
+    "BOE-A-2026-17078",
+    "BOE-A-2026-17082",
+    "BOE-A-2026-17083",
+    "BOE-A-2026-17084",
+    "BOE-A-2026-17085"
+   ],
+   "II-B_libre_designacion": [
+    "BOE-A-2026-17092"
+   ]
+  },
+  "items": [
+   {
+    "id": "BOE-A-2026-17076",
+    "sec": "I",
+    "dep": "Ministerio de Economía, Comercio y Empresa",
+    "titulo": "Orden ECM/825/2026, de 30 de julio, por la que se acuerda la emisión, acuñación y puesta en circulación de monedas de colección de una onza de oro dedicadas al «Cerdo Ibérico».",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-17077",
+    "sec": "II-A",
+    "dep": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "titulo": "Orden PJC/826/2026, de 29 de julio, por la que se nombran Abogados Fiscales sustitutos para el año 2026-2027.",
+    "categorias": [
+     "nombramiento"
+    ]
+   }
+  ],
+  "indice_entierro_dia": 25
+ },
+ {
+  "fecha": "2026-08-07",
+  "num_boe": 192,
+  "total": 184,
+  "por_seccion": {
+   "I": 3,
+   "II-A": 7,
+   "II-B": 40,
+   "III": 50,
+   "V-A": 55,
+   "V-B": 29
+  },
+  "rangos": {
+   "A": [
+    "BOE-A-2026-17187",
+    "BOE-A-2026-17286"
+   ],
+   "B": [
+    "BOE-B-2026-26328",
+    "BOE-B-2026-26411"
+   ]
+  },
+  "convenios_iii": 9,
+  "notas": "Viernes de agosto: entierro 55 para todo el día. Sección I: tres leyes de Canarias. Cultura ejercita derecho de tanteo en subastas de arte (3). En V-B, subvención directa del Consorcio de Santiago (26383) y convocatorias de premios y subvenciones en concurrencia (26401, 26402).",
+  "items": [
+   {
+    "id": "BOE-B-2026-26383",
+    "sec": "V-B",
+    "dep": "Ministerio de Hacienda",
+    "titulo": "Extracto de la resolución por la que se hace público el Acuerdo de 24 de julio de 2026 del Consejo de Administración del Consorcio de la Ciudad de Santiago de Compostela por el que se aprueban las bases reguladoras de la subvención directa en especie para la conservación de la torre de servicios centrales de la plaza de abastos en 2026",
+    "categorias": [
+     "subvencion_directa"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17187",
+    "sec": "I",
+    "dep": "Comunidad Autónoma de Canarias",
+    "titulo": "Ley 1/2026, de 28 de abril, de modificación de la Ley 7/1995, de 6 de abril, de ordenación del turismo de Canarias.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-17189",
+    "sec": "I",
+    "dep": "Comunidad Autónoma de Canarias",
+    "titulo": "Ley 3/2026, de 16 de junio, de cabildos insulares.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-17190",
+    "sec": "II-A",
+    "dep": "Ministerio de Trabajo y Economía Social",
+    "titulo": "Resolución de 29 de julio de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 11 de junio de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17192",
+    "sec": "II-A",
+    "dep": "Ministerio de Sanidad",
+    "titulo": "Resolución de 30 de julio de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 29 de junio de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17194",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 28 de julio de 2026, de la Universidad Nacional de Educación a Distancia, por la que se nombra Profesor Titular de Universidad a don Jorge Pérez Martín.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17195",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 28 de julio de 2026, de la Universidad Nacional de Educación a Distancia, por la que se nombra Profesor Titular de Universidad a don Juan Claver Gil.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17196",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 28 de julio de 2026, de la Universidad Nacional de Educación a Distancia, por la que se nombra Profesora Titular de Universidad a doña Claribel de Castro Sánchez.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17193",
+    "sec": "II-A",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Resolución de 28 de julio de 2026, de la Secretaría de Estado de Función Pública, por la que se corrigen errores en la de 5 de junio de 2026, por la que se nombra personal funcionario de carrera, por el sistema general de acceso libre y promoción interna, en la Escala de Técnicos Facultativos Superiores de Organismos Autónomos del Ministerio de Medio Ambiente.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17197",
+    "sec": "II-B",
+    "dep": "Ministerio del Interior",
+    "titulo": "Resolución de 30 de julio de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17199",
+    "sec": "II-B",
+    "dep": "Ministerio de Trabajo y Economía Social",
+    "titulo": "Orden TES/832/2026, de 29 de julio, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   }
+  ],
+  "indice_entierro_dia": 55
+ },
+ {
+  "fecha": "2026-08-08",
+  "num_boe": 193,
+  "total": 316,
+  "por_seccion": {
+   "I": 2,
+   "II-A": 6,
+   "II-B": 33,
+   "III": 47,
+   "IV": 24,
+   "V-B": 204
+  },
+  "rangos": {
+   "A": [
+    "BOE-A-2026-17287",
+    "BOE-A-2026-17374"
+   ],
+   "B": [
+    "BOE-B-2026-26412",
+    "BOE-B-2026-26639"
+   ]
+  },
+  "convenios_iii": 8,
+  "notas": "El día más voluminoso de la quincena por las ~190 subastas de la AEAT en V-B. En III, corrección de la asignación de subvenciones por las inundaciones de 2024-2025 (17367).",
+  "items": [
+   {
+    "id": "BOE-A-2026-17288",
+    "sec": "I",
+    "dep": "Comunidad Autónoma de Aragón",
+    "titulo": "Decreto-ley 1/2026, de 10 de junio, del Gobierno de Aragón, por el que se concede un suplemento de crédito para atender las necesidades adicionales de financiación derivadas del funcionamiento de los servicios públicos esenciales y se adoptan medidas urgentes en relación con determinadas subvenciones de interés público.",
+    "categorias": [
+     "credito_extraordinario"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17287",
+    "sec": "I",
+    "dep": "Comunidad Autónoma de Cantabria",
+    "titulo": "Ley de Cantabria 9/2026, de 23 de julio, de Control Ambiental.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-17289",
+    "sec": "II-A",
+    "dep": "Ministerio de Asuntos Exteriores, Unión Europea y Cooperación",
+    "titulo": "Orden AUC/841/2026, de 6 de agosto, por la que se resuelve la convocatoria de libre designación, efectuada por Orden AUC/532/2026, de 21 de mayo.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17290",
+    "sec": "II-A",
+    "dep": "Ministerio de Educación, Formación Profesional y Deportes",
+    "titulo": "Orden EFD/842/2026, de 30 de julio, por la que, a propuesta de la Consejería de Educación, Ciencia, Universidades y Formación Profesional de la Comunidad Autónoma de Galicia, se nombra personal funcionario de carrera de los Cuerpos de Inspectores de Educación, Profesores de Enseñanza Secundaria, Profesores Especialistas en Sectores Singulares de la Formación Profesional y Maestros, a las personas seleccionadas en los procedimientos selectivos convocados por Orden de 14 de febrero de 2025.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17294",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 29 de julio de 2026, de la Universidad Nacional de Educación a Distancia, por la que se nombra Profesor Titular de Universidad a don Fernán Ariel del Val Ripollés.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17295",
+    "sec": "II-B",
+    "dep": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "titulo": "Resolución de 4 de agosto de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17296",
+    "sec": "II-B",
+    "dep": "Ministerio de Vivienda y Agenda Urbana",
+    "titulo": "Resolución de 31 de julio de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17297",
+    "sec": "II-B",
+    "dep": "Comisión Nacional de los Mercados y la Competencia",
+    "titulo": "Resolución de 5 de agosto de 2026, de la Comisión Nacional de los Mercados y la Competencia, por la que se corrigen errores en la de 27 de julio de 2026, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   }
+  ],
+  "indice_entierro_dia": 25
+ },
+ {
+  "fecha": "2026-08-09",
+  "num_boe": 194,
+  "total": 1,
+  "por_seccion": {
+   "I": 1
+  },
+  "rangos": {
+   "A": [
+    "BOE-A-2026-17375",
+    "BOE-A-2026-17375"
+   ],
+   "B": null
+  },
+  "convenios_iii": 0,
+  "notas": "BOE extraordinario de domingo con una única disposición.",
+  "items": [
+   {
+    "id": "BOE-A-2026-17375",
+    "sec": "I",
+    "dep": "Ministerio del Interior",
+    "titulo": "Orden INT/846/2026, de 7 de agosto, sobre el restablecimiento temporal de los controles fronterizos en las fronteras interiores aéreas y marítimas españolas con respecto a los vuelos y enlaces marítimos de pasajeros procedentes de la República Italiana.",
+    "categorias": []
+   }
+  ],
+  "indice_entierro_dia": 25
+ },
+ {
+  "fecha": "2026-08-10",
+  "num_boe": 195,
+  "total": 202,
+  "por_seccion": {
+   "II-A": 52,
+   "II-B": 36,
+   "III": 44,
+   "IV": 3,
+   "V-A": 32,
+   "V-B": 35
+  },
+  "rangos": {
+   "A": [
+    "BOE-A-2026-17376",
+    "BOE-A-2026-17507"
+   ],
+   "B": [
+    "BOE-B-2026-26640",
+    "BOE-B-2026-26709"
+   ]
+  },
+  "convenios_iii": 16,
+  "notas": "El lunes más cargado de personal: 52 disposiciones en II-A por los destinos masivos de Justicia en todas las CCAA. Cese y nombramiento del mismo puesto en la REPER ante la UE el mismo día (17378 y 17381).",
+  "items": [
+   {
+    "id": "BOE-A-2026-17378",
+    "sec": "II-A",
+    "dep": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "titulo": "Orden PJC/847/2026, de 4 de agosto, por la que se dispone el cese de doña María Dolores Villar Guzmán como Coordinadora para Asuntos Jurídicos en la Representación Permanente de España ante la Unión Europea.",
+    "categorias": [
+     "cese"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17381",
+    "sec": "II-A",
+    "dep": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "titulo": "Orden PJC/850/2026, de 4 de agosto, por la que se nombra Coordinadora para Asuntos Jurídicos en la Representación Permanente de España ante la Unión Europea a doña Sonsoles Centeno Huerta.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17395",
+    "sec": "II-A",
+    "dep": "Ministerio Fiscal",
+    "titulo": "Decreto de 16 de julio de 2026, de la Fiscal General del Estado, por el que se nombra Delegada de la Fiscalía Especial Antidroga en la Fiscalía de Área de Marbella a doña María del Carmen Tirado Gálvez.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17396",
+    "sec": "II-A",
+    "dep": "Ministerio Fiscal",
+    "titulo": "Decreto de 30 de julio de 2026, de la Fiscal General del Estado, por el que se nombra Fiscal Delegada de Delitos contra la Administración Pública de la Fiscalía Provincial de Madrid a doña Ana Victoria Rojo Alonso.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17379",
+    "sec": "II-A",
+    "dep": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "titulo": "Orden PJC/848/2026, de 31 de julio, por la que se nombra personal funcionario del Cuerpo de Gestión Procesal y Administrativa de la Administración de Justicia, por promoción interna, a las personas que superaron el proceso selectivo convocado por Orden PJC/104/2024, de 31 de enero.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17382",
+    "sec": "II-A",
+    "dep": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "titulo": "Resolución de 24 de julio de 2026, de la Dirección General de Seguridad Jurídica y Fe Pública, por la que se nombra Notario Archivero de Protocolos del Distrito Notarial de Segovia, al notario con residencia en dicha localidad, don Vicente Sánchez Segura.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17428",
+    "sec": "II-B",
+    "dep": "Ministerio de Cultura",
+    "titulo": "Resolución de 3 de agosto de 2026, de la Secretaría de Estado de Cultura, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17432",
+    "sec": "II-B",
+    "dep": "Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+    "titulo": "Resolución de 3 de agosto de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17433",
+    "sec": "II-B",
+    "dep": "Ministerio de Igualdad",
+    "titulo": "Resolución de 4 de agosto de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   }
+  ],
+  "ii_a_desglose": {
+   "libre_designacion": [
+    "17376",
+    "17377",
+    "17386",
+    "17387",
+    "17389",
+    "17390",
+    "17391",
+    "17392"
+   ],
+   "ceses": [
+    "17378"
+   ],
+   "nombramientos": [
+    "17379",
+    "17380",
+    "17381",
+    "17382",
+    "17388",
+    "17393",
+    "17394",
+    "17395",
+    "17396",
+    "17419",
+    "17420",
+    "17421",
+    "17422",
+    "17423",
+    "17424",
+    "17425",
+    "17426",
+    "17427"
+   ],
+   "destinos_concursos_jubilaciones": [
+    "17383",
+    "17384",
+    "17385",
+    "17397",
+    "17398",
+    "17399",
+    "17400",
+    "17401",
+    "17402",
+    "17403",
+    "17404",
+    "17405",
+    "17406",
+    "17407",
+    "17408",
+    "17409",
+    "17410",
+    "17411",
+    "17412",
+    "17413",
+    "17414",
+    "17415",
+    "17416",
+    "17417",
+    "17418"
+   ]
+  },
+  "indice_entierro_dia": 25
+ },
+ {
+  "fecha": "2026-08-11",
+  "num_boe": 196,
+  "total": 148,
+  "por_seccion": {
+   "II-A": 12,
+   "II-B": 29,
+   "III": 24,
+   "IV": 12,
+   "V-A": 31,
+   "V-B": 40
+  },
+  "rangos": {
+   "A": [
+    "BOE-A-2026-17508",
+    "BOE-A-2026-17572"
+   ],
+   "B": [
+    "BOE-B-2026-26710",
+    "BOE-B-2026-26792"
+   ]
+  },
+  "convenios_iii": 5,
+  "notas": "Tres Reales Decretos de ascenso a general (17509-17511) con la fórmula «se promueve al empleo de General», que la regla v1 de nombramiento (solo «se nombra») no captura: candidata a v2. Convenio para aplicar IA a la gestión de subvenciones (17565).",
+  "items": [
+   {
+    "id": "BOE-A-2026-17509",
+    "sec": "II-A",
+    "dep": "Ministerio de Defensa",
+    "titulo": "Real Decreto 656/2026, de 29 de julio, por el que se promueve al empleo de General de Brigada del Cuerpo de Ingenieros Politécnicos del Ejército de Tierra al Coronel don Andrés Ignacio López Moreno.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-17510",
+    "sec": "II-A",
+    "dep": "Ministerio de Defensa",
+    "titulo": "Real Decreto 657/2026, de 29 de julio, por el que se promueve al empleo de General de División del Cuerpo General del Ejército del Aire y del Espacio al General de Brigada don Enrique Cuenca-Romero Jiménez.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-17511",
+    "sec": "II-A",
+    "dep": "Ministerio de Defensa",
+    "titulo": "Real Decreto 658/2026, de 29 de julio, por el que se promueve al empleo de General de Brigada del Cuerpo General del Ejército del Aire y del Espacio al Coronel don Ignacio Zulueta Martín.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-17516",
+    "sec": "II-A",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Resolución de 29 de julio de 2026, de la Secretaría de Estado de Función Pública, por la que se nombra personal funcionario de carrera, por el sistema general de acceso libre y para el cambio de régimen jurídico del personal laboral fijo incluido en el anexo II del IV Convenio Único para el personal laboral de la Administración General del Estado, del Cuerpo de Farmacéuticos Titulares.",
+    "categorias": [
+     "nombramiento",
+     "convenio"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17517",
+    "sec": "II-A",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Resolución de 30 de julio de 2026, de la Secretaría de Estado de Función Pública, por la que se nombra personal funcionario de carrera, para la estabilización de empleo temporal, por el sistema de concurso, para el cupo de reserva de personas con discapacidad, en Cuerpos y Escalas de la Administración General del Estado.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17519",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 30 de julio de 2026, de la Universidad Nacional de Educación a Distancia, por la que se nombra Profesora Titular de Universidad a doña María del Pilar Gomiz Pascual.",
+    "categorias": [
+     "nombramiento"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17526",
+    "sec": "II-B",
+    "dep": "Ministerio de Sanidad",
+    "titulo": "Resolución de 4 de agosto de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17527",
+    "sec": "II-B",
+    "dep": "Ministerio de Inclusión, Seguridad Social y Migraciones",
+    "titulo": "Resolución de 4 de agosto de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   }
+  ],
+  "ii_a_desglose": {
+   "libre_designacion": [
+    "17508",
+    "17512",
+    "17513",
+    "17514",
+    "17515",
+    "17518"
+   ],
+   "ascensos_rd": [
+    "17509",
+    "17510",
+    "17511"
+   ],
+   "nombramientos": [
+    "17516",
+    "17517",
+    "17519"
+   ]
+  },
+  "indice_entierro_dia": 25
+ },
+ {
+  "fecha": "2026-08-12",
+  "num_boe": 197,
+  "total": 136,
+  "por_seccion": {
+   "I": 1,
+   "II-A": 5,
+   "II-B": 18,
+   "III": 29,
+   "IV": 1,
+   "V-A": 42,
+   "V-B": 40
+  },
+  "rangos": {
+   "A": [
+    "BOE-A-2026-17573",
+    "BOE-A-2026-17625"
+   ],
+   "B": [
+    "BOE-B-2026-26793",
+    "BOE-B-2026-26875"
+   ]
+  },
+  "convenios_iii": 19,
+  "notas": "III dominada por la tanda de 9 convenios de asistencia jurídica de la Abogacía General del Estado con entes públicos. Encomienda de gestión de Interior a Migraciones para notificaciones del procedimiento fronterizo de asilo (17614).",
+  "items": [
+   {
+    "id": "BOE-A-2026-17574",
+    "sec": "II-A",
+    "dep": "Ministerio de Asuntos Exteriores, Unión Europea y Cooperación",
+    "titulo": "Resolución de 3 de agosto de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 26 de mayo de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17579",
+    "sec": "II-B",
+    "dep": "Ministerio de Economía, Comercio y Empresa",
+    "titulo": "Resolución de 28 de julio de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación, en el Organismo Autónomo Instituto Nacional de Estadística.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17580",
+    "sec": "II-B",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Resolución de 6 de agosto de 2026, de la Secretaría de Estado de Función Pública, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17575",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 29 de julio de 2026, de la Universidad de La Laguna, por la que se nombra Catedrático de Universidad a don José Antonio González Marrero.",
+    "categorias": [
+     "nombramiento"
+    ]
+   }
+  ],
+  "indice_entierro_dia": 25
+ },
+ {
+  "fecha": "2026-08-13",
+  "num_boe": 198,
+  "total": 169,
+  "por_seccion": {
+   "II-A": 5,
+   "II-B": 31,
+   "III": 62,
+   "V-A": 40,
+   "V-B": 31
+  },
+  "rangos": {
+   "A": [
+    "BOE-A-2026-17626",
+    "BOE-A-2026-17723"
+   ],
+   "B": [
+    "BOE-B-2026-26876",
+    "BOE-B-2026-26946"
+   ]
+  },
+  "convenios_iii": 40,
+  "notas": "Día récord de convenios en III (~40): la tanda Intercoonecta de la AECID, más asistencias jurídicas de la Abogacía del Estado y el convenio interadministrativo del «Año Santo Jacobeo 2027» (17667).",
+  "items": [
+   {
+    "id": "BOE-A-2026-17626",
+    "sec": "II-A",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Resolución de 6 de agosto de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 9 de junio de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17635",
+    "sec": "II-B",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Resolución de 4 de agosto de 2026, de la Dirección General de la Función Pública, por la que se publica la convocatoria para la provisión de puesto de trabajo reservado al personal funcionario de administración local con habilitación de carácter nacional, por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17667",
+    "sec": "III",
+    "dep": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+    "titulo": "Resolución de 5 de agosto de 2026, de la Subsecretaría, por la que se publica el Convenio entre el Ministerio de Cultura, el Ministerio de Hacienda, las Comunidades Autónomas del País Vasco, Cataluña, Galicia, Principado de Asturias, Cantabria, La Rioja, Aragón, la Comunidad Foral de Navarra y la Comunidad de Castilla y León, para la creación de la Comisión Interadministrativa del acontecimiento de excepcional interés público «Año Santo Jacobeo 2027».",
+    "categorias": [
+     "convenio"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17627",
+    "sec": "II-A",
+    "dep": "Universidades",
+    "titulo": "Resolución de 29 de julio de 2026, de la Universidad de A Coruña, por la que se nombra Profesora Titular de Universidad a doña Lara Varela Garrote.",
+    "categorias": [
+     "nombramiento"
+    ]
+   }
+  ],
+  "indice_entierro_dia": 25
+ },
+ {
+  "fecha": "2026-08-14",
+  "num_boe": 199,
+  "total": 130,
+  "por_seccion": {
+   "II-A": 4,
+   "II-B": 20,
+   "III": 21,
+   "V-A": 57,
+   "V-B": 28
+  },
+  "rangos": {
+   "A": [
+    "BOE-A-2026-17724",
+    "BOE-A-2026-17768"
+   ],
+   "B": [
+    "BOE-B-2026-26947",
+    "BOE-B-2026-27031"
+   ]
+  },
+  "convenios_iii": 14,
+  "notas": "Viernes, víspera de la Asunción y agosto: entierro 85/100 para todo el día. Se publican la renovación de la explotación de la Central Nuclear Almaraz (17756) y la declaración de «Meirás» como Lugar de Memoria Democrática (17754).",
+  "items": [
+   {
+    "id": "BOE-A-2026-17756",
+    "sec": "III",
+    "dep": "Ministerio para la Transición Ecológica y el Reto Demográfico",
+    "titulo": "Orden TED/864/2026, de 12 de agosto, por la que se concede la renovación de la autorización de explotación de la Central Nuclear Almaraz, Unidades I y II.",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-17754",
+    "sec": "III",
+    "dep": "Ministerio de Política Territorial y Memoria Democrática",
+    "titulo": "Resolución de 6 de agosto de 2026, de la Secretaría de Estado de Memoria Democrática, por la que se declara Lugar de Memoria Democrática «Meirás».",
+    "categorias": []
+   },
+   {
+    "id": "BOE-A-2026-17724",
+    "sec": "II-A",
+    "dep": "Ministerio de Asuntos Exteriores, Unión Europea y Cooperación",
+    "titulo": "Resolución de 4 de agosto de 2026, de la Subsecretaría, por la que se resuelve parcialmente la convocatoria de libre designación, efectuada por Resolución de 22 de enero de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17725",
+    "sec": "II-A",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Resolución de 6 de agosto de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 1 de julio de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17726",
+    "sec": "II-A",
+    "dep": "Ministerio para la Transformación Digital y de la Función Pública",
+    "titulo": "Resolución de 6 de agosto de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 26 de junio de 2026.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   }
+  ],
+  "indice_entierro_dia": 85
+ },
+ {
+  "fecha": "2026-08-15",
+  "num_boe": 200,
+  "total": 210,
+  "por_seccion": {
+   "II-B": 34,
+   "III": 32,
+   "IV": 53,
+   "V-B": 91
+  },
+  "rangos": {
+   "A": [
+    "BOE-A-2026-17769",
+    "BOE-A-2026-17834"
+   ],
+   "B": [
+    "BOE-B-2026-27032",
+    "BOE-B-2026-27175"
+   ]
+  },
+  "convenios_iii": 20,
+  "notas": "El BOE del día de la Asunción (festivo nacional): sin sección I ni nombramientos, pero con 91 anuncios en V-B (subastas de la AEAT) y 11 convocatorias de libre designación municipales. Premio Nacional de Televisión (17826).",
+  "items": [
+   {
+    "id": "BOE-A-2026-17770",
+    "sec": "II-B",
+    "dep": "Ministerio de Política Territorial y Memoria Democrática",
+    "titulo": "Resolución de 5 de agosto de 2026, de la Subsecretaría, por la que se convoca la provisión de puestos de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17772",
+    "sec": "II-B",
+    "dep": "Administración Local",
+    "titulo": "Resolución de 28 de julio de 2026, del Ayuntamiento de Mijas (Málaga), referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   },
+   {
+    "id": "BOE-A-2026-17777",
+    "sec": "II-B",
+    "dep": "Administración Local",
+    "titulo": "Resolución de 6 de agosto de 2026, del Ayuntamiento de Majadahonda (Madrid), referente a la convocatoria para proveer puesto de trabajo por el sistema de libre designación.",
+    "categorias": [
+     "libre_designacion"
+    ]
+   }
+  ],
+  "indice_entierro_dia": 25
+ }
+]

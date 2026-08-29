@@ -1,0 +1,9 @@
+{"fecha":"2026-08-06","num_boe":191,"total":208,"por_seccion":{"I":1,"II-A":12,"II-B":32,"III":66,"V-A":50,"V-B":46,"V-C":1},
+"rangos":{"A":["BOE-A-2026-17076","BOE-A-2026-17186"],"B":["BOE-B-2026-26231","BOE-B-2026-26327"]},
+"convenios_iii":9,
+"notas":"Sección I: solo la moneda de colección de oro dedicada al «Cerdo Ibérico» (BOE-A-2026-17076). La III va cargada de recursos registrales de la DGSJFP (23) y 9 fundaciones nuevas inscritas.",
+"items_resumen":{"II-A_nombramientos":["BOE-A-2026-17077","BOE-A-2026-17079","BOE-A-2026-17080","BOE-A-2026-17081","BOE-A-2026-17086","BOE-A-2026-17087","BOE-A-2026-17088"],"II-A_libre_designacion":["BOE-A-2026-17078","BOE-A-2026-17082","BOE-A-2026-17083","BOE-A-2026-17084","BOE-A-2026-17085"],"II-B_libre_designacion":["BOE-A-2026-17092"]},
+"items":[
+{"id":"BOE-A-2026-17076","sec":"I","dep":"Ministerio de Economía, Comercio y Empresa","titulo":"Orden ECM/825/2026, de 30 de julio, por la que se acuerda la emisión, acuñación y puesta en circulación de monedas de colección de una onza de oro dedicadas al «Cerdo Ibérico»."},
+{"id":"BOE-A-2026-17077","sec":"II-A","dep":"Ministerio de la Presidencia, Justicia y Relaciones con las Cortes","titulo":"Orden PJC/826/2026, de 29 de julio, por la que se nombran Abogados Fiscales sustitutos para el año 2026-2027."}
+]}

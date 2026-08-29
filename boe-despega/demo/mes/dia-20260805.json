@@ -1,0 +1,9 @@
+{"fecha":"2026-08-05","num_boe":190,"total":194,"por_seccion":{"I":1,"II-A":17,"II-B":34,"III":21,"V-A":45,"V-B":76},
+"rangos":{"A":["BOE-A-2026-17003","BOE-A-2026-17075"],"B":["BOE-B-2026-26110","BOE-B-2026-26230"]},
+"convenios_iii":6,
+"notas":"Sin sección IV. 17 disposiciones de personal en II-A: 5 libres designaciones resueltas y nombramientos masivos (Policía Nacional, habilitados nacionales). Banco de España publica sanciones a Banco de Crédito Social Cooperativo (BOE-A-2026-17068).",
+"items_resumen":{"II-A_libre_designacion":["BOE-A-2026-17004","BOE-A-2026-17005","BOE-A-2026-17007","BOE-A-2026-17008","BOE-A-2026-17009"],"II-A_nombramientos":["BOE-A-2026-17006","BOE-A-2026-17010","BOE-A-2026-17011","BOE-A-2026-17012","BOE-A-2026-17013","BOE-A-2026-17014","BOE-A-2026-17015","BOE-A-2026-17016","BOE-A-2026-17017","BOE-A-2026-17018","BOE-A-2026-17019","BOE-A-2026-17020"],"II-B_libre_designacion":["BOE-A-2026-17022"]},
+"items":[
+{"id":"BOE-A-2026-17006","sec":"II-A","dep":"Ministerio del Interior","titulo":"Resolución de 22 de julio de 2026, de la Secretaría de Estado de Seguridad, por la que se nombra personal funcionario de carrera de la Policía Nacional, Escala Básica, categoría de Policía, a los Policías Alumnos, que han superado el proceso selectivo establecido reglamentariamente."},
+{"id":"BOE-A-2026-17010","sec":"II-A","dep":"Ministerio para la Transformación Digital y de la Función Pública","titulo":"Orden TDF/820/2026, de 28 de julio, por la que se nombra personal funcionario de carrera, por el sistema general de acceso libre, de la Escala de funcionarios de administración local con habilitación de carácter nacional, Subescala de Secretaría, categoría de Entrada, y se asigna primer destino."}
+]}

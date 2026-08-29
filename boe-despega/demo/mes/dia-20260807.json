@@ -1,0 +1,17 @@
+{"fecha":"2026-08-07","num_boe":192,"total":184,"por_seccion":{"I":3,"II-A":7,"II-B":40,"III":50,"V-A":55,"V-B":29},
+"rangos":{"A":["BOE-A-2026-17187","BOE-A-2026-17286"],"B":["BOE-B-2026-26328","BOE-B-2026-26411"]},
+"convenios_iii":9,
+"notas":"Viernes de agosto: entierro 55 para todo el día. Sección I: tres leyes de Canarias. Cultura ejercita derecho de tanteo en subastas de arte (3). En V-B, subvención directa del Consorcio de Santiago (26383) y convocatorias de premios y subvenciones en concurrencia (26401, 26402).",
+"items":[
+{"id":"BOE-B-2026-26383","sec":"V-B","dep":"Ministerio de Hacienda","titulo":"Extracto de la resolución por la que se hace público el Acuerdo de 24 de julio de 2026 del Consejo de Administración del Consorcio de la Ciudad de Santiago de Compostela por el que se aprueban las bases reguladoras de la subvención directa en especie para la conservación de la torre de servicios centrales de la plaza de abastos en 2026"},
+{"id":"BOE-A-2026-17187","sec":"I","dep":"Comunidad Autónoma de Canarias","titulo":"Ley 1/2026, de 28 de abril, de modificación de la Ley 7/1995, de 6 de abril, de ordenación del turismo de Canarias."},
+{"id":"BOE-A-2026-17189","sec":"I","dep":"Comunidad Autónoma de Canarias","titulo":"Ley 3/2026, de 16 de junio, de cabildos insulares."},
+{"id":"BOE-A-2026-17190","sec":"II-A","dep":"Ministerio de Trabajo y Economía Social","titulo":"Resolución de 29 de julio de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 11 de junio de 2026."},
+{"id":"BOE-A-2026-17192","sec":"II-A","dep":"Ministerio de Sanidad","titulo":"Resolución de 30 de julio de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 29 de junio de 2026."},
+{"id":"BOE-A-2026-17194","sec":"II-A","dep":"Universidades","titulo":"Resolución de 28 de julio de 2026, de la Universidad Nacional de Educación a Distancia, por la que se nombra Profesor Titular de Universidad a don Jorge Pérez Martín."},
+{"id":"BOE-A-2026-17195","sec":"II-A","dep":"Universidades","titulo":"Resolución de 28 de julio de 2026, de la Universidad Nacional de Educación a Distancia, por la que se nombra Profesor Titular de Universidad a don Juan Claver Gil."},
+{"id":"BOE-A-2026-17196","sec":"II-A","dep":"Universidades","titulo":"Resolución de 28 de julio de 2026, de la Universidad Nacional de Educación a Distancia, por la que se nombra Profesora Titular de Universidad a doña Claribel de Castro Sánchez."},
+{"id":"BOE-A-2026-17193","sec":"II-A","dep":"Ministerio para la Transformación Digital y de la Función Pública","titulo":"Resolución de 28 de julio de 2026, de la Secretaría de Estado de Función Pública, por la que se corrigen errores en la de 5 de junio de 2026, por la que se nombra personal funcionario de carrera, por el sistema general de acceso libre y promoción interna, en la Escala de Técnicos Facultativos Superiores de Organismos Autónomos del Ministerio de Medio Ambiente."},
+{"id":"BOE-A-2026-17197","sec":"II-B","dep":"Ministerio del Interior","titulo":"Resolución de 30 de julio de 2026, de la Subsecretaría, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación."},
+{"id":"BOE-A-2026-17199","sec":"II-B","dep":"Ministerio de Trabajo y Economía Social","titulo":"Orden TES/832/2026, de 29 de julio, por la que se convoca la provisión de puesto de trabajo por el sistema de libre designación."}
+]}

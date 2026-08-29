@@ -1,0 +1,11 @@
+{"fecha":"2026-08-14","num_boe":199,"total":130,"por_seccion":{"II-A":4,"II-B":20,"III":21,"V-A":57,"V-B":28},
+"rangos":{"A":["BOE-A-2026-17724","BOE-A-2026-17768"],"B":["BOE-B-2026-26947","BOE-B-2026-27031"]},
+"convenios_iii":14,
+"notas":"Viernes, víspera de la Asunción y agosto: entierro 85/100 para todo el día. Se publican la renovación de la explotación de la Central Nuclear Almaraz (17756) y la declaración de «Meirás» como Lugar de Memoria Democrática (17754).",
+"items":[
+{"id":"BOE-A-2026-17756","sec":"III","dep":"Ministerio para la Transición Ecológica y el Reto Demográfico","titulo":"Orden TED/864/2026, de 12 de agosto, por la que se concede la renovación de la autorización de explotación de la Central Nuclear Almaraz, Unidades I y II."},
+{"id":"BOE-A-2026-17754","sec":"III","dep":"Ministerio de Política Territorial y Memoria Democrática","titulo":"Resolución de 6 de agosto de 2026, de la Secretaría de Estado de Memoria Democrática, por la que se declara Lugar de Memoria Democrática «Meirás»."},
+{"id":"BOE-A-2026-17724","sec":"II-A","dep":"Ministerio de Asuntos Exteriores, Unión Europea y Cooperación","titulo":"Resolución de 4 de agosto de 2026, de la Subsecretaría, por la que se resuelve parcialmente la convocatoria de libre designación, efectuada por Resolución de 22 de enero de 2026."},
+{"id":"BOE-A-2026-17725","sec":"II-A","dep":"Ministerio para la Transformación Digital y de la Función Pública","titulo":"Resolución de 6 de agosto de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 1 de julio de 2026."},
+{"id":"BOE-A-2026-17726","sec":"II-A","dep":"Ministerio para la Transformación Digital y de la Función Pública","titulo":"Resolución de 6 de agosto de 2026, de la Subsecretaría, por la que se resuelve la convocatoria de libre designación, efectuada por Resolución de 26 de junio de 2026."}
+]}
