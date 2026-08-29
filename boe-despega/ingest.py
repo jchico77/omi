@@ -80,7 +80,9 @@ REGLAS = [
     # La spec pide "indulto", pero la fórmula real del BOE es "por el que se
     # indulta a don ...": se amplía al lexema para no perder esos títulos.
     ("indulto", None, re.compile(r"\bindult")),
-    ("subvencion_directa", None, re.compile(r"(?=.*concesion directa)(?=.*(subvencion|ayuda))")),
+    # La spec pide "concesión directa" + subvención/ayuda; en el BOE real también
+    # aparece la fórmula "subvención directa" (p. ej. BOE-B-2026-26383).
+    ("subvencion_directa", None, re.compile(r"(?=.*concesion directa)(?=.*(subvencion|ayuda))|subvencion(es)? directas?")),
     ("credito_extraordinario", None, re.compile(r"creditos? extraordinarios?|suplementos? de credito")),
     ("organismo_nuevo", {"I"}, re.compile(rf"(?=.*se crea)(?=.*\b{ORGANISMOS}\b)")),
     ("organismo_suprimido", None, re.compile(rf"(?=.*se suprimen?)(?=.*\b{ORGANISMOS}\b)")),
