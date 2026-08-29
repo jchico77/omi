@@ -1,0 +1,275 @@
+<title>Cortinas de humo · carrusel</title>
+<style>
+  /* Carrusel 1080×1350 (formato documento de LinkedIn, lectura en móvil).
+     Tema único sobre blanco; cada .slide es una página del PDF. */
+  :root {
+    --papel: #FFFFFF;
+    --papel-hueso: #F5F4EF;
+    --tinta: #201F1A;
+    --tinta-suave: #55524A;
+    --humo: #8B8578;
+    --marcador: #FFE23D;
+    --alarma: #A03D10;
+    --alarma-tenue: #F0E3C8;
+    --linea: #E3E1D8;
+  }
+  @page { size: 1080px 1350px; margin: 0; }
+
+  body { margin: 0; background: var(--papel); color: var(--tinta);
+         font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif; }
+
+  .slide {
+    width: 1080px; height: 1350px; box-sizing: border-box;
+    padding: 78px 84px; display: flex; flex-direction: column;
+    page-break-after: always; break-after: page; position: relative;
+    background: var(--papel); overflow: hidden;
+  }
+
+  .kicker {
+    font-family: "IBM Plex Mono", monospace; font-size: 30px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--alarma);
+    margin: 0 0 36px;
+  }
+  .kicker .gris { color: var(--humo); }
+
+  h1, h2 {
+    font-family: "Libre Caslon Text", Georgia, serif; font-weight: 700;
+    margin: 0; text-wrap: balance;
+  }
+  h1 { font-size: 108px; line-height: 1.04; }
+  h2 { font-size: 84px; line-height: 1.08; }
+  em { font-style: italic; }
+
+  p { font-size: 44px; line-height: 1.4; margin: 0; }
+  .suave { color: var(--tinta-suave); }
+  mark { background: var(--marcador); color: #201F1A; padding: 0 8px; }
+
+  .pie {
+    margin-top: auto; padding-top: 32px; border-top: 3px solid var(--tinta);
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: "IBM Plex Mono", monospace; font-size: 26px; color: var(--humo);
+    letter-spacing: 0.08em;
+  }
+  .pie .num { color: var(--alarma); font-weight: 600; }
+
+  /* Cabecera de expediente */
+  .exp-fila { display: flex; align-items: baseline; gap: 28px; flex-wrap: wrap; margin: 0 0 40px; }
+  .exp-num {
+    font-family: "IBM Plex Mono", monospace; font-size: 30px; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--papel); background: var(--alarma); padding: 8px 22px;
+  }
+  .exp-fecha { font-family: "IBM Plex Mono", monospace; font-size: 30px; color: var(--tinta-suave); }
+  .entierro {
+    font-family: "IBM Plex Mono", monospace; font-size: 30px; font-weight: 600; color: var(--alarma);
+  }
+
+  /* Paneles cortina / boletín */
+  .bloque { border-left: 10px solid var(--linea); padding: 6px 0 6px 40px; margin-top: 42px; }
+  .bloque.cortina { border-color: var(--humo); }
+  .bloque.boletin { border-color: var(--alarma); }
+  .rotulo {
+    font-family: "IBM Plex Mono", monospace; font-size: 28px; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase; margin: 0 0 18px;
+  }
+  .cortina .rotulo { color: var(--humo); }
+  .boletin .rotulo { color: var(--alarma); }
+  .jugada-rotulo {
+    font-family: "IBM Plex Mono", monospace; font-size: 28px; font-weight: 600;
+    letter-spacing: 0.16em; text-transform: uppercase; color: var(--alarma);
+    margin: 46px 0 16px;
+  }
+  .boe-id {
+    font-family: "IBM Plex Mono", monospace; font-size: 32px;
+    background: var(--alarma-tenue); padding: 2px 12px; white-space: nowrap;
+  }
+
+  .portada { justify-content: flex-start; }
+  .portada h1 { font-size: 122px; margin-top: 40px; }
+  .portada .sub { margin-top: 64px; font-size: 50px; line-height: 1.4; color: var(--tinta-suave); }
+  .doblelinea { border-top: 6px double var(--tinta); }
+
+  ul { margin: 0; padding-left: 56px; font-size: 44px; line-height: 1.45; }
+  li { margin-bottom: 22px; }
+  li:last-child { margin-bottom: 0; }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;600&display=swap">
+
+<!-- ── 1 · PORTADA ── -->
+<section class="slide portada">
+  <p class="kicker">BOE Despega · Dosier especial <span class="gris">· jun – ago 2026</span></p>
+  <h1>Mientras tú mirabas el incendio, <em>el BOE te la colaba</em></h1>
+  <p class="sub">Tres meses, <strong>cinco expedientes</strong>, un método: medallas a los suyos,
+  traspasos, dinero a dedo y facturas a tu nombre — publicados justo cuando nadie miraba.</p>
+  <div class="pie doblelinea"><span>Desliza →</span><span class="num">1 / 13</span></div>
+</section>
+
+<!-- ── 2 · MÉTODO ── -->
+<section class="slide">
+  <p class="kicker">Cómo se entierra una norma</p>
+  <h2>El «índice de entierro»: 0–100</h2>
+  <p style="margin-top:56px;">Mide lo propicio del día para pasar inadvertido:</p>
+  <ul style="margin-top:40px;">
+    <li><strong>Viernes</strong> → +30</li>
+    <li><strong>Víspera de festivo</strong> → +30</li>
+    <li><strong>Agosto o Navidad</strong> → +25</li>
+    <li>Y la cortina definitiva: <mark>un día en que una sola noticia lo devora todo</mark></li>
+  </ul>
+  <p class="suave" style="margin-top:64px;">Todo lo que sigue es real y está en boe.es.
+  Documentamos la coincidencia; la intención no consta.</p>
+  <div class="pie"><span>BOE Despega</span><span class="num">2 / 13</span></div>
+</section>
+
+<!-- ── 3 · EXP 1 titular ── -->
+<section class="slide">
+  <div class="exp-fila"><span class="exp-num">Expediente 1</span><span class="exp-fecha">viernes 12 · jun</span></div>
+  <h2>El Papa aún no había despegado y ya llovían medallas: <em>Gran Cruz para Carmen Calvo</em></h2>
+  <p class="suave" style="margin-top:56px;">Último día de León XIV en España. Portadas, especiales
+  y directos monopolizados por la despedida papal.</p>
+  <p style="margin-top:48px;"><span class="entierro">índice de entierro: 30</span></p>
+  <div class="pie"><span>BOE Despega</span><span class="num">3 / 13</span></div>
+</section>
+
+<!-- ── 4 · EXP 1 careo ── -->
+<section class="slide">
+  <p class="kicker">Expediente 1 <span class="gris">· la jugada</span></p>
+  <div class="bloque cortina">
+    <p class="rotulo">La cortina</p>
+    <p>El Papa se despide de Madrid; de fondo, el caso Leire Díez y el hermano del presidente.</p>
+  </div>
+  <div class="bloque boletin">
+    <p class="rotulo">El boletín</p>
+    <p>Gran Cruz del Mérito a la Seguridad para la exvicepresidenta Carmen Calvo
+    <span class="boe-id">BOE-A-2026-12783</span> y subvención directa —sin concurso— a la
+    Fundación IMEC <span class="boe-id">BOE-A-2026-12713</span>.</p>
+  </div>
+  <p class="jugada-rotulo">La jugada</p>
+  <p>Aprobada en el Consejo de Ministros del día 9, <mark>con el Papa todavía en Madrid</mark>.
+  Solo la contaron agencias.</p>
+  <div class="pie"><span>BOE Despega</span><span class="num">4 / 13</span></div>
+</section>
+
+<!-- ── 5 · EXP 2 titular ── -->
+<section class="slide">
+  <div class="exp-fila"><span class="exp-num">Expediente 2</span><span class="exp-fecha">viernes 24 · jul</span></div>
+  <h2>España ardía en emergencia nacional; el BOE, <em>traspasando competencias al País Vasco</em></h2>
+  <p class="suave" style="margin-top:56px;">Primera emergencia de interés nacional por incendios
+  de la historia: Madrid y Ávila, más de 63.000 evacuados.</p>
+  <p style="margin-top:48px;"><span class="entierro">índice de entierro: 30</span></p>
+  <div class="pie"><span>BOE Despega</span><span class="num">5 / 13</span></div>
+</section>
+
+<!-- ── 6 · EXP 2 careo ── -->
+<section class="slide">
+  <p class="kicker">Expediente 2 <span class="gris">· la jugada</span></p>
+  <div class="bloque cortina">
+    <p class="rotulo">La cortina</p>
+    <p>La propia orden de emergencia va en ese BOE <span class="boe-id">BOE-A-2026-16093</span>
+    y devora cada minuto de televisión.</p>
+  </div>
+  <div class="bloque boletin">
+    <p class="rotulo">El boletín</p>
+    <p>Unas páginas más abajo: traspaso de <strong>tráfico</strong>
+    <span class="boe-id">BOE-A-2026-16151</span> y de <strong>seguros agrarios</strong>
+    <span class="boe-id">BOE-A-2026-16152</span> al País Vasco.</p>
+  </div>
+  <p class="jugada-rotulo">La jugada</p>
+  <p>Firmados <mark>nueve días antes</mark>. Podían salir cualquier día; salieron el viernes en que
+  ardía media meseta. Cobertura: cero.</p>
+  <div class="pie"><span>BOE Despega</span><span class="num">6 / 13</span></div>
+</section>
+
+<!-- ── 7 · EXP 3 titular ── -->
+<section class="slide">
+  <div class="exp-fila"><span class="exp-num">Expediente 3</span><span class="exp-fecha">viernes 31 · jul</span></div>
+  <h2>El Ejército en Ceuta, España camino de la playa: <em>el viernes en que se despachó TODO</em></h2>
+  <p class="suave" style="margin-top:56px;">Miles de cruces desde Marruecos, nueve muertos, las
+  Fuerzas Armadas desplegadas. Sánchez y Marlaska aterrizan allí ese mismo día.</p>
+  <p style="margin-top:48px;"><span class="entierro">índice de entierro: 30</span></p>
+  <div class="pie"><span>BOE Despega</span><span class="num">7 / 13</span></div>
+</section>
+
+<!-- ── 8 · EXP 3 careo ── -->
+<section class="slide">
+  <p class="kicker">Expediente 3 <span class="gris">· la jugada</span></p>
+  <div class="bloque boletin">
+    <p class="rotulo">Un solo BOE despachó</p>
+    <ul style="font-size:42px;">
+      <li>La <strong>AP-9 a Galicia</strong>, en vigor al día siguiente
+      <span class="boe-id">BOE-A-2026-16652</span></li>
+      <li><strong>Subvenciones directas</strong> «en determinados ámbitos» de Interior
+      <span class="boe-id">BOE-A-2026-16656</span></li>
+      <li>Otra subvención directa a Canarias <span class="boe-id">BOE-A-2026-16660</span></li>
+      <li>El reparto del pastel eléctrico post-apagón <span class="boe-id">BOE-A-2026-16661</span></li>
+    </ul>
+  </div>
+  <p class="jugada-rotulo">La jugada</p>
+  <p>Último día laborable antes del éxodo de agosto. Solo la prensa gallega contó la AP-9;
+  el decreto de Interior, <mark>ni una línea</mark>.</p>
+  <div class="pie"><span>BOE Despega</span><span class="num">8 / 13</span></div>
+</section>
+
+<!-- ── 9 · EXP 4 titular ── -->
+<section class="slide">
+  <div class="exp-fila"><span class="exp-num">Expediente 4</span><span class="exp-fecha">lunes 3 · ago</span></div>
+  <h2>El apagón lo pagas tú: <em>38,7 millones a tu recibo</em>, colados en pleno éxodo veraniego</h2>
+  <p class="suave" style="margin-top:56px;">Primer lunes de agosto, redacciones bajo mínimos.
+  La poca atención del día se la lleva la sentencia de la amnistía… del mismo BOE.</p>
+  <p style="margin-top:48px;"><span class="entierro">índice de entierro: 25</span></p>
+  <div class="pie"><span>BOE Despega</span><span class="num">9 / 13</span></div>
+</section>
+
+<!-- ── 10 · EXP 4 careo ── -->
+<section class="slide">
+  <p class="kicker">Expediente 4 <span class="gris">· la jugada</span></p>
+  <div class="bloque boletin">
+    <p class="rotulo">El boletín</p>
+    <p>La CNMC reparte los <strong>38,7 M€ del apagón de abril</strong> entre los consumidores:
+    12 mensualidades en el recibo de la luz. El Estado queda <strong>excluido</strong>.
+    <span class="boe-id">BOE-A-2026-16925</span></p>
+  </div>
+  <p class="jugada-rotulo">La jugada</p>
+  <p>La mayor crisis eléctrica reciente <mark>la pagas tú en la factura</mark> — por resolución de un
+  regulador, sin debate parlamentario. Cuando llegue el recibo, la resolución ya será vieja.</p>
+  <div class="pie"><span>BOE Despega</span><span class="num">10 / 13</span></div>
+</section>
+
+<!-- ── 11 · EXP 5 titular ── -->
+<section class="slide">
+  <div class="exp-fila"><span class="exp-num">Expediente 5</span><span class="exp-fecha">viernes 14 · ago</span></div>
+  <h2>Almaraz hasta 2030: <em>el entierro perfecto</em>, con España en llamas y saliendo de puente</h2>
+  <p class="suave" style="margin-top:56px;">240.785 hectáreas quemadas, 42 grandes incendios.
+  Viernes, víspera de la Asunción, pleno agosto.</p>
+  <p style="margin-top:48px;"><span class="entierro">índice de entierro: 85 — récord del trimestre</span></p>
+  <div class="pie"><span>BOE Despega</span><span class="num">11 / 13</span></div>
+</section>
+
+<!-- ── 12 · EXP 5 careo ── -->
+<section class="slide">
+  <p class="kicker">Expediente 5 <span class="gris">· la jugada</span></p>
+  <div class="bloque boletin">
+    <p class="rotulo">El boletín</p>
+    <p><strong>Renovación de la central nuclear de Almaraz hasta 2030</strong>
+    <span class="boe-id">BOE-A-2026-17756</span>, firmada el 12, en trámite desde octubre:
+    la fecha se eligió. De regalo: el Pazo de Meirás <span class="boe-id">BOE-A-2026-17754</span>
+    y, dos días antes, el asilo exprés en frontera <span class="boe-id">BOE-A-2026-17614</span>.</p>
+  </div>
+  <p class="jugada-rotulo">La jugada</p>
+  <p>La decisión nuclear más sensible de la legislatura, anunciada por el BOE de un viernes de puente
+  de agosto. <mark>85 sobre 100</mark>: la página uno del manual del entierro perfecto.</p>
+  <div class="pie"><span>BOE Despega</span><span class="num">12 / 13</span></div>
+</section>
+
+<!-- ── 13 · CIERRE ── -->
+<section class="slide">
+  <p class="kicker">El patrón</p>
+  <h2>No es un despiste: <em>es un método</em></h2>
+  <ul style="margin-top:64px;">
+    <li><strong>4 de 5</strong> expedientes cayeron en <strong>viernes</strong></li>
+    <li><strong>5 de 5</strong> coincidieron con la mayor cortina informativa de su semana</li>
+    <li>El contraejemplo existe: el lunes tras la final del Mundial, el BOE no traía nada — lo comprobamos</li>
+  </ul>
+  <p class="suave" style="margin-top:72px;">La coincidencia está documentada; la intención, no.
+  Juzgar es cosa del lector. Fuentes: boe.es y hemeroteca (enlazadas en el dosier completo).</p>
+  <div class="pie doblelinea"><span>BOE Despega · datos, no opiniones</span><span class="num">13 / 13</span></div>
+</section>
