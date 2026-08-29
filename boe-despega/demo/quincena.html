@@ -1,0 +1,321 @@
+<title>La quincena en el BOE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#F6F4ED; --ink:#201F1A; --ink-soft:#5C594E; --ink-faint:#8B877A;
+  --line:#DBD7C9; --line-soft:#E8E5DA;
+  --marker:#FFE23D; --marker-soft:#FFF3B8;
+  --heat-1:#EBD9B4; --heat-2:#D9A254; --heat-3:#C06520; --heat-4:#A03D10;
+  --card:#FCFBF7;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#181712; --ink:#EAE6D9; --ink-soft:#ABA695; --ink-faint:#7C7869;
+    --line:#3A3729; --line-soft:#2A2820;
+    --marker:#F5D22C; --marker-soft:#4A4110;
+    --heat-1:#4A3B20; --heat-2:#8A5F26; --heat-3:#C97A31; --heat-4:#E8945B;
+    --card:#201F18;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#181712; --ink:#EAE6D9; --ink-soft:#ABA695; --ink-faint:#7C7869;
+  --line:#3A3729; --line-soft:#2A2820;
+  --marker:#F5D22C; --marker-soft:#4A4110;
+  --heat-1:#4A3B20; --heat-2:#8A5F26; --heat-3:#C97A31; --heat-4:#E8945B;
+  --card:#201F18;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:16px/1.6 "IBM Plex Sans",system-ui,sans-serif;margin:0;padding:0 20px 80px}
+main{max-width:860px;margin:0 auto}
+a{color:inherit;text-decoration-color:var(--ink-faint);text-underline-offset:3px}
+a:hover{text-decoration-color:var(--ink);background:var(--marker-soft)}
+h1,h2,h3{font-family:"Libre Caslon Text",Georgia,serif;text-wrap:balance;margin:0}
+mark{background:var(--marker);color:#201F1A;padding:0 3px;border-radius:2px}
+.mono{font-family:"IBM Plex Mono",monospace}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+header{border-top:6px double var(--ink);margin-top:28px;padding-top:18px}
+.mast{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 18px;justify-content:space-between}
+h1{font-size:clamp(30px,5.5vw,46px);font-weight:700;letter-spacing:-.01em}
+h1 em{font-style:italic;font-weight:400}
+.mast-meta{text-align:right;font-size:13px;color:var(--ink-soft);line-height:1.5}
+.lede{font-family:"Libre Caslon Text",Georgia,serif;font-size:19px;font-style:italic;color:var(--ink-soft);max-width:58ch;margin:14px 0 0;border-bottom:1px solid var(--ink);padding-bottom:22px}
+section{margin-top:52px}
+h2{font-size:26px;padding-bottom:8px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.kicker{font-size:14px;color:var(--ink-soft);margin:6px 0 22px;max-width:68ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(126px,1fr));gap:10px;margin-top:20px}
+.stat{border:1px solid var(--line);background:var(--card);padding:14px 16px 12px;border-radius:3px}
+.stat .v{font-family:"Libre Caslon Text",Georgia,serif;font-size:32px;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat .l{font-size:12.5px;color:var(--ink-soft);margin-top:2px}
+.stat.hot{border-color:var(--heat-3)}
+.stat.hot .v{color:var(--heat-4)}
+.chip{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;border:1.5px solid var(--ink);padding:2px 9px;border-radius:99px;font-weight:500}
+.chip.tag{background:var(--marker);border-color:var(--marker);color:#201F1A}
+.entry{border-bottom:1px solid var(--line-soft);padding:20px 0}
+.entry:last-child{border-bottom:none}
+.entry-top{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:8px}
+.entry-id{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--ink-soft)}
+.entry-dep{font-size:12.5px;color:var(--ink-faint)}
+.entry h3{font-size:17.5px;font-weight:400;line-height:1.55;max-width:72ch}
+.entry-foot{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;font-size:13px;color:var(--ink-soft);align-items:center}
+.star{border:1.5px solid var(--heat-3);background:var(--card);border-radius:4px;padding:22px 24px;margin-top:20px}
+.star .sum{display:flex;flex-wrap:wrap;gap:4px 10px;margin:14px 0 4px;font-family:"IBM Plex Mono",monospace;font-size:13px}
+.star .sum span{border:1px solid var(--line);padding:3px 10px;border-radius:3px;background:var(--paper)}
+.star .sum .tot{background:var(--heat-4);border-color:var(--heat-4);color:var(--paper);font-weight:500}
+/* Gráfico volumen por día */
+.vol{margin-top:24px}
+.vol-grid{display:grid;grid-template-columns:repeat(14,1fr);gap:6px;align-items:end;height:170px}
+.vol-bar{position:relative;background:var(--ink-soft);border-radius:3px 3px 0 0;min-height:2px}
+.vol-bar.hot55{background:var(--heat-3)}
+.vol-bar.hot85{background:var(--heat-4)}
+.vol-bar .n{position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.vol-lab{display:grid;grid-template-columns:repeat(14,1fr);gap:6px;margin-top:6px;border-top:1px solid var(--line);padding-top:6px}
+.vol-lab span{text-align:center;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-faint)}
+.vol-lab span b{display:block;color:var(--ink-soft);font-weight:500}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;font-size:12.5px;color:var(--ink-soft);align-items:center}
+.sw{display:inline-block;width:11px;height:11px;border-radius:2px;vertical-align:-1px;margin-right:5px}
+.miss{display:grid;gap:14px;margin-top:18px}
+.miss-item{border-left:3px solid var(--line);padding:2px 0 2px 16px}
+.miss-item b{font-weight:600}
+.miss-item p{margin:4px 0 0;font-size:14px;color:var(--ink-soft);max-width:70ch}
+details{margin-top:16px}
+summary{cursor:pointer;font-weight:600;font-size:14.5px;padding:10px 0}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:3px}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:680px}
+th{text-align:left;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);font-weight:500;padding:10px 12px;border-bottom:1px solid var(--line);background:var(--card)}
+td{padding:9px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+tr:last-child td{border-bottom:none}
+td.num{font-variant-numeric:tabular-nums;font-family:"IBM Plex Mono",monospace;text-align:right}
+td.mono{white-space:nowrap;font-size:12.5px}
+.digest{border:1px solid var(--line);background:var(--card);border-radius:4px;padding:20px 24px;margin-top:20px;font-size:15px;line-height:1.75}
+.digest .hd{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:10px}
+.notes{font-size:13.5px;color:var(--ink-soft);border-top:6px double var(--ink);margin-top:64px;padding-top:18px}
+.notes p{max-width:75ch;margin:10px 0}
+</style>
+
+<main>
+<header>
+  <div class="mast">
+    <h1>La <em>quincena</em> en el BOE</h1>
+    <div class="mast-meta mono">
+      1–15 de agosto de 2026<br>
+      14 boletines · 2.424 disposiciones y anuncios
+    </div>
+  </div>
+  <p class="lede">Lo que el Estado publicó mientras España estaba en la playa, leído entero por BOE&nbsp;Despega. Sin opinión: la ironía la pone el calendario.</p>
+</header>
+
+<section>
+  <div class="eyebrow">El resumen que enviaría el bot</div>
+  <h2>La quincena, en cifras</h2>
+  <div class="stats">
+    <div class="stat"><div class="v">2.424</div><div class="l">disposiciones y anuncios</div></div>
+    <div class="stat"><div class="v">80</div><div class="l">nombramientos (II-A)</div></div>
+    <div class="stat"><div class="v">2</div><div class="l">ceses</div></div>
+    <div class="stat"><div class="v">87</div><div class="l">libres designaciones</div></div>
+    <div class="stat"><div class="v">~203</div><div class="l">convenios publicados</div></div>
+    <div class="stat"><div class="v">0</div><div class="l">indultos</div></div>
+    <div class="stat hot"><div class="v">85</div><div class="l">índice de entierro máximo</div></div>
+  </div>
+  <div class="digest">
+    <div class="hd">🗞️ Vista previa del mensaje de Telegram</div>
+    <b>La quincena en el BOE (1–15 ago):</b> 80 nombramientos y 2 ceses en la sección de personal; 87 menciones a la libre designación (39 resueltas, 48 convocadas); ~203 convenios; 1 suplemento de crédito; 1 subvención directa; 0 indultos. Día más enterrado: <b>viernes 14</b>, víspera de la Asunción (85/100), con la renovación de la Central Nuclear Almaraz dentro.
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">El hallazgo de la quincena</div>
+  <h2>Viernes 14, víspera de festivo: entierro 85/100</h2>
+  <p class="kicker">El único día de la quincena que suma las tres señales del índice —viernes (+30), víspera de festivo nacional (+30) y agosto (+25)— trae dos disposiciones de las que llenan portadas… cuando alguien las ve.</p>
+
+  <div class="star">
+    <div class="entry-top">
+      <span class="chip" style="border-color:var(--heat-4);color:var(--heat-4)">entierro 85/100</span>
+      <span class="entry-id">BOE-A-2026-17756 · III · viernes 14-08-2026</span>
+    </div>
+    <div class="entry-dep">Ministerio para la Transición Ecológica y el Reto Demográfico</div>
+    <h3 style="font-size:18px;font-weight:400;line-height:1.55;margin-top:8px">Orden TED/864/2026, de 12 de agosto, por la que se concede la <mark>renovación de la autorización de explotación de la Central Nuclear Almaraz</mark>, Unidades I y II.</h3>
+    <div class="sum">
+      <span>viernes +30</span><span>víspera de la Asunción +30</span><span>agosto +25</span><span class="tot">= 85</span>
+    </div>
+    <p style="font-size:13.5px;color:var(--ink-soft);margin:10px 0 0;max-width:70ch">Una de las decisiones energéticas del año, publicada la mañana antes del festivo de mitad de agosto. <a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17756">Ver en boe.es</a></p>
+  </div>
+
+  <article class="entry">
+    <div class="entry-top">
+      <span class="chip" style="border-color:var(--heat-4);color:var(--heat-4)">entierro 85/100</span>
+      <span class="entry-id">BOE-A-2026-17754 · III · viernes 14-08-2026</span>
+    </div>
+    <div class="entry-dep">Ministerio de Política Territorial y Memoria Democrática</div>
+    <h3>Resolución de 6 de agosto de 2026, de la Secretaría de Estado de Memoria Democrática, por la que se declara Lugar de Memoria Democrática «Meirás».</h3>
+    <div class="entry-foot"><a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17754">Ver en boe.es</a></div>
+  </article>
+</section>
+
+<section>
+  <div class="eyebrow">Volumen y calendario</div>
+  <h2>2.424 publicaciones en 14 boletines</h2>
+  <p class="kicker">Altura de la barra: disposiciones y anuncios de cada BOE. El color marca el índice de entierro del día. El domingo 9 hubo un BOE extraordinario con una sola orden: el restablecimiento de controles fronterizos con Italia.</p>
+  <div class="vol">
+    <div class="vol-grid">
+      <div class="vol-bar" style="height:42%"><span class="n">134</span></div>
+      <div class="vol-bar" style="height:65%"><span class="n">205</span></div>
+      <div class="vol-bar" style="height:59%"><span class="n">187</span></div>
+      <div class="vol-bar" style="height:61%"><span class="n">194</span></div>
+      <div class="vol-bar" style="height:66%"><span class="n">208</span></div>
+      <div class="vol-bar hot55" style="height:58%"><span class="n">184</span></div>
+      <div class="vol-bar" style="height:100%"><span class="n">316</span></div>
+      <div class="vol-bar" style="height:1%"><span class="n">1</span></div>
+      <div class="vol-bar" style="height:64%"><span class="n">202</span></div>
+      <div class="vol-bar" style="height:47%"><span class="n">148</span></div>
+      <div class="vol-bar" style="height:43%"><span class="n">136</span></div>
+      <div class="vol-bar" style="height:53%"><span class="n">169</span></div>
+      <div class="vol-bar hot85" style="height:41%"><span class="n">130</span></div>
+      <div class="vol-bar" style="height:66%"><span class="n">210</span></div>
+    </div>
+    <div class="vol-lab">
+      <span><b>1</b>sá</span><span><b>3</b>lu</span><span><b>4</b>ma</span><span><b>5</b>mi</span><span><b>6</b>ju</span><span><b>7</b>vi</span><span><b>8</b>sá</span><span><b>9</b>do</span><span><b>10</b>lu</span><span><b>11</b>ma</span><span><b>12</b>mi</span><span><b>13</b>ju</span><span><b>14</b>vi</span><span><b>15</b>sá</span>
+    </div>
+    <div class="legend">
+      <span><span class="sw" style="background:var(--ink-soft)"></span>entierro 25 (agosto)</span>
+      <span><span class="sw" style="background:var(--heat-3)"></span>55 (viernes de agosto)</span>
+      <span><span class="sw" style="background:var(--heat-4)"></span>85 (viernes + víspera de festivo)</span>
+    </div>
+    <p style="font-size:13px;color:var(--ink-faint);margin-top:12px;max-width:68ch">El pico del sábado 8 no es actividad legislativa: son ~190 subastas de la Agencia Tributaria publicadas de una tacada. El 15 de agosto —festivo nacional— el BOE salió igualmente, con 91 anuncios más de subastas y ni un solo nombramiento.</p>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Lo que el clasificador subrayó</div>
+  <h2>Los hallazgos de las reglas v1</h2>
+
+  <article class="entry">
+    <div class="entry-top">
+      <span class="chip tag">credito_extraordinario</span>
+      <span class="entry-id">BOE-A-2026-17288 · I · sábado 08-08-2026</span>
+    </div>
+    <div class="entry-dep">Comunidad Autónoma de Aragón</div>
+    <h3>Decreto-ley 1/2026, de 10 de junio, del Gobierno de Aragón, por el que se concede un <mark>suplemento de crédito</mark> para atender las necesidades adicionales de financiación derivadas del funcionamiento de los servicios públicos esenciales y se adoptan medidas urgentes en relación con determinadas subvenciones de interés público.</h3>
+    <div class="entry-foot"><a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17288">Ver en boe.es</a><span style="font-size:12.5px;color:var(--ink-faint)">publicado en sábado</span></div>
+  </article>
+
+  <article class="entry">
+    <div class="entry-top">
+      <span class="chip tag">subvencion_directa</span>
+      <span class="entry-id">BOE-B-2026-26383 · V-B · viernes 07-08-2026</span>
+    </div>
+    <div class="entry-dep">Ministerio de Hacienda · Consorcio de la Ciudad de Santiago de Compostela</div>
+    <h3>Extracto del Acuerdo de 24 de julio de 2026 por el que se aprueban las bases reguladoras de la <mark>subvención directa</mark> en especie para la conservación de la torre de servicios centrales de la plaza de abastos en 2026.</h3>
+    <div class="entry-foot"><a href="https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-26383">Ver en boe.es</a>
+    <div style="display:flex;align-items:center;gap:8px;min-width:160px"><span class="mono" style="font-size:13px">55</span><div style="flex:1;height:8px;background:var(--line-soft);border-radius:99px;overflow:hidden"><div style="height:100%;width:55%;background:var(--heat-3);border-radius:99px"></div></div></div></div>
+  </article>
+
+  <article class="entry">
+    <div class="entry-top">
+      <span class="chip tag">cese</span><span class="chip tag">nombramiento</span>
+      <span class="entry-id">BOE-A-2026-17378 y 17381 · II-A · lunes 10-08-2026</span>
+    </div>
+    <div class="entry-dep">Ministerio de la Presidencia, Justicia y Relaciones con las Cortes</div>
+    <h3>El mismo día, dos órdenes consecutivas: <mark>se dispone el cese</mark> de la Coordinadora para Asuntos Jurídicos en la Representación Permanente ante la UE y <mark>se nombra</mark> a su sustituta. El relevo completo de un puesto clave en Bruselas, resuelto en pleno agosto.</h3>
+    <div class="entry-foot"><a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17378">Cese</a><a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17381">Nombramiento</a></div>
+  </article>
+
+  <article class="entry">
+    <div class="entry-top">
+      <span class="chip tag">nombramiento</span>
+      <span class="entry-id">BOE-A-2026-17395 y 17396 · II-A · lunes 10-08-2026</span>
+    </div>
+    <div class="entry-dep">Ministerio Fiscal</div>
+    <h3>La Fiscal General <mark>nombra</mark> Delegada de la Fiscalía Especial Antidroga en Marbella y Fiscal Delegada de Delitos contra la Administración Pública en Madrid — los dos destinos anticorrupción y antidroga más sensibles, renovados en agosto.</h3>
+    <div class="entry-foot"><a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17395">Marbella</a><a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17396">Madrid</a></div>
+  </article>
+
+  <article class="entry">
+    <div class="entry-top">
+      <span class="chip">extraordinario</span>
+      <span class="entry-id">BOE-A-2026-17375 · I · domingo 09-08-2026</span>
+    </div>
+    <div class="entry-dep">Ministerio del Interior</div>
+    <h3>El único BOE de domingo de la quincena, con una sola disposición: el restablecimiento temporal de los controles fronterizos aéreos y marítimos con Italia.</h3>
+    <div class="entry-foot"><a href="https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-17375">Ver en boe.es</a></div>
+  </article>
+</section>
+
+<section>
+  <div class="eyebrow">Contadores de personal</div>
+  <h2>El verano no frena los despachos</h2>
+  <div class="stats">
+    <div class="stat"><div class="v">39</div><div class="l">libres designaciones resueltas</div></div>
+    <div class="stat"><div class="v">48</div><div class="l">libres designaciones convocadas</div></div>
+    <div class="stat"><div class="v">52</div><div class="l">disposiciones de personal solo el lunes 10</div></div>
+    <div class="stat"><div class="v">3</div><div class="l">ascensos a general por Real Decreto</div></div>
+  </div>
+  <p class="kicker" style="margin-top:18px">Los 80 nombramientos de la quincena se reparten sobre todo entre Universidades (cátedras y titularidades), Función Pública (tomas de posesión masivas de cuerpos de funcionarios) y el Ministerio Fiscal (5 decretos de la Fiscal General). El día grande fue el lunes 10: 52 disposiciones de personal de golpe, con los destinos de Justicia de todas las comunidades autónomas.</p>
+</section>
+
+<section>
+  <div class="eyebrow">Igual de importante</div>
+  <h2>Lo que las reglas v1 aún no ven</h2>
+  <div class="miss">
+    <div class="miss-item">
+      <b>Los ascensos a general se escapan.</b>
+      <p>Tres Reales Decretos del 11 de agosto «promueven al empleo de General» a tres coroneles. La regla v1 de nombramiento busca «se nombra» en el título y no captura «se promueve»: anotado para la v2 con datos reales en la mano.</p>
+    </div>
+    <div class="miss-item">
+      <b>«Subvención directa» no es «concesión directa».</b>
+      <p>La spec buscaba «concesión directa» + subvención; la fórmula del Consorcio de Santiago dice «subvención directa». La regla ya se amplió para cubrir ambas — el hallazgo de arriba existe gracias a esa corrección.</p>
+    </div>
+    <div class="miss-item">
+      <b>Cero indultos y cero organismos nuevos, de verdad.</b>
+      <p>En 2.424 publicaciones no hay ningún indulto ni ninguna creación de comisionado, observatorio, oficina, consejo o agencia. En agosto el Consejo de Ministros apenas despacha: el contador a cero también es información.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Día a día</div>
+  <h2>Los 14 boletines</h2>
+  <details open>
+    <summary>Tabla completa (cada fila enlaza al sumario oficial)</summary>
+    <div class="tblwrap">
+      <table>
+        <thead><tr><th>BOE</th><th>Fecha</th><th style="text-align:right">Total</th><th style="text-align:right">II-A</th><th style="text-align:right">Entierro</th><th>Lo más destacado</th></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </details>
+</section>
+
+<div class="notes">
+  <div class="eyebrow">Notas de método</div>
+  <p><b>Fuente:</b> sumarios oficiales completos de cada BOE (espejo público <span class="mono">datania/boe</span> en Hugging Face, que archiva a diario el PDF y el texto del sumario; última sincronización: 24 de agosto, con boletines hasta el 15). Se leyeron íntegros los 14 sumarios de la quincena (~670&nbsp;KB) a través del conector, porque la red de este entorno sigue bloqueando <span class="mono">boe.es</span>.</p>
+  <p><b>Qué es exacto y qué es aproximado:</b> los totales por día y por sección salen de los rangos de identificadores oficiales (correlativos) y son exactos. Los contadores de nombramientos, ceses y libres designaciones salen de la lectura completa de la sección II-A y de las convocatorias de la II-B, aplicando los criterios v1 sobre el título. El conteo de convenios (~203) agrega los epígrafes «Convenios» de la sección III. Las etiquetas de los hallazgos las asignó el clasificador real del proyecto (<span class="mono">ingest.py</span>), no esta página.</p>
+  <p><b>Cobertura:</b> del 16 al 29 de agosto el espejo aún no tiene datos (sincroniza con ~9 días de retraso). Con <span class="mono">boe.es</span> permitido en la red del entorno, la ingesta oficial cubriría el mes completo el mismo día.</p>
+</div>
+</main>
+
+<script>
+const dias=[
+["187","2026-08-01","sá",134,10,25,"3 disposiciones generales; 8 cátedras nombradas; 26 convenios"],
+["188","2026-08-03","lu",205,9,25,"El TC publica la sentencia sobre la Ley de amnistía (STC 54/2026)"],
+["189","2026-08-04","ma",187,17,25,"Primer cese del mes (Fiscalía); subvenciones por los incendios de 2025"],
+["190","2026-08-05","mi",194,17,25,"Nombramiento masivo de la Policía Nacional; sanciones del Banco de España"],
+["191","2026-08-06","ju",208,12,25,"Sección I: la moneda de oro del «Cerdo Ibérico»; 23 recursos registrales"],
+["192","2026-08-07","vi",184,7,55,"3 leyes de Canarias; subvención directa de Santiago; tanteo en subastas de arte"],
+["193","2026-08-08","sá",316,6,25,"Suplemento de crédito de Aragón; ~190 subastas de la AEAT"],
+["194","2026-08-09","do",1,0,25,"Extraordinario: controles fronterizos con Italia"],
+["195","2026-08-10","lu",202,52,25,"52 disposiciones de personal; relevo en la REPER-UE; fiscales Antidroga y Anticorrupción"],
+["196","2026-08-11","ma",148,12,25,"3 ascensos a general por Real Decreto"],
+["197","2026-08-12","mi",136,5,25,"9 convenios de asistencia jurídica de la Abogacía del Estado"],
+["198","2026-08-13","ju",169,5,25,"~40 convenios, récord de la quincena; «Año Santo Jacobeo 2027»"],
+["199","2026-08-14","vi",130,4,85,"Renovación de la Central Nuclear Almaraz; «Meirás», Lugar de Memoria"],
+["200","2026-08-15","sá",210,0,25,"Festivo de la Asunción: 91 subastas y ni un nombramiento"],
+];
+document.getElementById("tbody").innerHTML=dias.map(([n,f,dw,t,iia,e,d])=>{
+  const [y,m,dd]=f.split("-");
+  const heat=e>=80?"var(--heat-4)":e>=50?"var(--heat-3)":"var(--ink-faint)";
+  return `<tr><td class="mono"><a href="https://www.boe.es/boe/dias/${y}/${m}/${dd}/">n.º ${n}</a></td>`+
+  `<td class="mono">${dw} ${dd}-${m}</td><td class="num">${t}</td><td class="num">${iia}</td>`+
+  `<td class="num" style="color:${heat}">${e}</td><td style="font-size:12.5px;color:var(--ink-soft)">${d}</td></tr>`;
+}).join("");
+</script>
