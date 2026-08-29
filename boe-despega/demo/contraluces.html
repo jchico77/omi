@@ -1,42 +1,17 @@
 <title>Cortinas de humo</title>
 <style>
+  /* Diseño de tema único sobre fondo blanco: se pinta explícito en cualquier host. */
   :root {
-    --papel: #F6F4ED;
-    --papel-hueso: #EFECE1;
+    --papel: #FFFFFF;
+    --papel-hueso: #F5F4EF;
     --tinta: #201F1A;
     --tinta-suave: #55524A;
     --humo: #8B8578;
     --marcador: #FFE23D;
     --alarma: #A03D10;
-    --alarma-tenue: #EBD9B4;
-    --linea: #D8D3C4;
-    --tarjeta: #FBFAF5;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --papel: #1B1A16;
-      --papel-hueso: #232119;
-      --tinta: #EDEAE0;
-      --tinta-suave: #B5B0A2;
-      --humo: #8B8578;
-      --marcador: #E0C428;
-      --alarma: #E0703C;
-      --alarma-tenue: #3A2A1C;
-      --linea: #3A382F;
-      --tarjeta: #24221C;
-    }
-  }
-  :root[data-theme="dark"] {
-    --papel: #1B1A16;
-    --papel-hueso: #232119;
-    --tinta: #EDEAE0;
-    --tinta-suave: #B5B0A2;
-    --humo: #8B8578;
-    --marcador: #E0C428;
-    --alarma: #E0703C;
-    --alarma-tenue: #3A2A1C;
-    --linea: #3A382F;
-    --tarjeta: #24221C;
+    --alarma-tenue: #F0E3C8;
+    --linea: #E3E1D8;
+    --tarjeta: #FBFAF6;
   }
 
   body {
